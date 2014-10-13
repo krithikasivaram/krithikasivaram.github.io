@@ -12,110 +12,217 @@ A:visited{color:yellow}
 A:hover{color:red}
 A:hover{color:red}
 </style>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-<script> 
-$(document).ready(function(){
-  $("#flip").click(function(){
-    $("#panel").slideToggle("slow");
-  });
-});
-</script>
-
-<style> 
-#panel,#flip
-{
-padding:0px;
-text-align:left;
-background-color:black;
-/*border:solid 1px #c3c3c3;*/
-}
-#panel
-{
-padding:0px;
-display:none;
-}
-</style>
+<!--include this for slides-->
+<script type="text/javascript" src="./javascripts/source/jquery.slides.min.js"></script>
+<!--end of include-->
 
 </head>
 
 <body bgcolor = "black">
-
-<table border="1" cellspacing="2" cellpadding="5" width="100%">
-<tr>
-
-<td width="50%">
-<img src="./images/krithika.jpg" width="900">
-</td>
-
-<td width="50%">
-<h2>Krithika Narayanaswamy</h2>
-Postdoctoral Associate<br>
-<a href="http://www.mae.cornell.edu/">Sibley school of Mechanical and Aerospace Engineering</a><br>
-<a href="http://www.cornell.edu/">Cornell University</a><br>
-Rhodes Hall, Room 633,<br>
-Ithaca, NY-14853<br>
-kn295 (at) cornell (dot) edu
-
-<h2>Research</h2>
-I work with <a href="http://pepiot.mae.cornell.edu">Prof. Perrine Pepiot</a>. My research revolves around chemical kinetic mechanism development for surrogates of real fuels. I am currently exploring reactive flow simulations as well.
-
-<img src="./images/wordle.png" width="800">
-</td>
-
-</tr>
-<table border="1" cellspacing="1" cellpadding="5" width="100%">
-<tr>
-<td>
-<h2>Journal publications</h2>
-<h4>Click each item for more details</h4>
-<ul>
-
-<li> K. Narayanaswamy, P. Pepiot, H. Pitsch, "A chemical mechanism for low to high temperature oxidation of methylcyclohexane as a component of transportation fuel surrogates", in review.</li><br>
-
-<div id="flip">
-	<li> K. Narayanaswamy, P. Pepiot, H. Pitsch, "A chemical mechanism for low to high temperature oxidation of n-dodecane as a component of transportation fuel surrogates", Combustion and Flame, 2014. </div>
-<div id="panel"> 
-	<ul style="list-style-type:square"> <li><a href="https://www.dropbox.com/s/otzzsa8gvsm8gue/Dodecane_Article.pdf?dl=0">Preprint*</a></li>
-<li><a href="https://www.dropbox.com/s/zxm8mseioqnpat1/Dodecane_Supplementary_Materials.pdf?dl=0">Supplementary document</a></li>
-<li>Chemkin format: <a href="https://www.dropbox.com/s/avmt9ln2yy5msl9/mechanismChemkin.txt?dl=0">Complete mechanism</a>/<a href="https://www.dropbox.com/s/cdlz0v50bcnel3z/highTMechChemkin.txt?dl=0">High temperature mechanism</a></li>
-<li>FlameMaster format: <a href="https://www.dropbox.com/s/2bwy74wmnf378ys/mechanismFlameMaster.txt?dl=0">Complete mechanism file</a>/<a href="https://www.dropbox.com/s/ujrw9aqq1ojpzgg/highTMechFlameMaster.txt?dl=0">High temperature mechanism</a></li>
-<li><a href="https://www.dropbox.com/s/gdexlpqq7um31o4/thermo.txt?dl=0">Thermodynamic data</a></li>
-<li><a href="https://www.dropbox.com/s/ttnrd2qj1e7rw6y/trans.txt?dl=0">Transport data</a></li>
-<li><a href="https://www.sciencedirect.com/science/article/pii/S0010218013003866">Journal version</a></li>
-<li><a href="https://www.sciencedirect.com/science/article/pii/S0010218013003866">Source files</a></li>
-</ul>
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">n-dodecane </div>
+   <div id="projectbrief">Chemical kinetic oxidation of n-dodecane at low through high temperatures</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
 </div>
+<!-- end header part -->
 
-<br>
-<!--<button id="hide">Show less</button>
-<button id="show">Show more</button>
--->
-<!-- <br> -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">n-dodecane details!</div>  </div>
+</div><!--header-->
+    
+    
+    <table border="0" width="100%" cellspacing="75">
+        <tr>
+                    <td width="30%">
+                    <!--pictures-->
+                    <!-- SlidesJS Optional: If you'd like to use this design -->
+                    <style>
+                        body {
+                            -webkit-font-smoothing: antialiased;
+                            font: normal 15px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+                            color: white;
+                            padding-top:0px;
+                        }
+                        
+                        #slides {
+                            display: none
+                        }
+                        
+                        #slides .slidesjs-navigation {
+                            margin-top:5px;
+                        }
+                        
+                        a.slidesjs-next,
+                        a.slidesjs-previous,
+                        a.slidesjs-play,
+                        a.slidesjs-stop {
+                            background-image: url(images/btns-next-prev.png);
+                            background-repeat: no-repeat;
+                            display:block;
+                            width:12px;
+                            height:18px;
+                            overflow: hidden;
+                            text-indent: -9999px;
+                            float: left;
+                            margin-right:5px;
+                        }
+                        
+                        a.slidesjs-next {
+                            margin-right:10px;
+                            background-position: -12px 0;
+                        }
+                        
+                        a:hover.slidesjs-next {
+                            background-position: -12px -18px;
+                        }
+                        
+                        a.slidesjs-previous {
+                            background-position: 0 0;
+                        }
+                        
+                        a:hover.slidesjs-previous {
+                            background-position: 0 -18px;
+                        }
+                        
+                        a.slidesjs-play {
+                            width:15px;
+                            background-position: -25px 0;
+                        }
+                        
+                        a:hover.slidesjs-play {
+                            background-position: -25px -18px;
+                        }
+                        
+                        a.slidesjs-stop {
+                            width:18px;
+                            background-position: -41px 0;
+                        }
+                        
+                        a:hover.slidesjs-stop {
+                            background-position: -41px -18px;
+                        }
+                        
+                        .slidesjs-pagination {
+                            margin: 7px 0 0;
+                            float: right;
+                            list-style: none;
+                        }
+                        
+                        .slidesjs-pagination li {
+                            float: left;
+                            margin: 0 1px;
+                        }
+                        
+                        .slidesjs-pagination li a {
+                            display: block;
+                            width: 13px;
+                            height: 0;
+                            padding-top: 13px;
+                            background-image: url(images/pagination.png);
+                            background-position: 0 0;
+                            float: left;
+                            overflow: hidden;
+                        }
+                        
+                        .slidesjs-pagination li a.active,
+                        .slidesjs-pagination li a:hover.active {
+                            background-position: 0 -13px
+                        }
+                        
+                        .slidesjs-pagination li a:hover {
+                            background-position: 0 -26px
+                        }
+                        
+                        #slides a:link,
+                        #slides a:visited {
+                            color: #333
+                        }
+                        
+                        #slides a:hover,
+                        #slides a:active {
+                            color: #9e2020
+                        }
+                        
+                        .navbar {
+                            overflow: hidden
+                        }
+                        </style>
+                    <!-- End SlidesJS Optional-->
+                    
+                    <style>
+                        #slides {
+                            display: none
+                        }
+                        
+                        .container {
+                            margin: 0 auto
+                        }
+                        
+                        
+                        </style>
+                    
+                    
+                    <div id="slides" class=slidePhotos>
+                        <img src="images/img1.jpg" class=slidePhotos>
+                            <img src="images/img2.jpg" class=slidePhotos>
+                                <img src="images/img3.jpg" class=slidePhotos>
+                                    <img src="images/img4.jpg" class=slidePhotos>
+                                        </div>
+                    
+                    
+                    <script>
+                        $(document).ready(function(){
+                                          $("#slides").slidesjs({
+                                                                width: 100,
+                                                                height:100,
+                                                                play: {
+                                                                active:true,
+                                                                auto: true,
+                                                                swap: true
+                                                                }
+                                                                
+                                                                
+                                                                });
+                                          });
+                        
+                        </script>
+                    <style>
+                        /* Prevents slides from flashing */
+                        .slidePhotos {
+                            width:100%;
+                            height: 100%;
+                        }
+                        </style>
+                    
+                <!--end of pictures-->
 
-<li> K Narayanaswamy, G Blanquart, H Pitsch, "A consistent chemical mechanism for oxidation of substituted aromatic species", Combustion and Flame, 2010</li><br>
+            </td>
+            
+            <td width="70%">
+                <div class="contents">
 
-</td>
-</tr>
+					<ul style="list-style-type:square">
+					<li><a href="https://www.dropbox.com/s/zxm8mseioqnpat1/Dodecane_Supplementary_Materials.pdf?dl=0">Supplementary document</a></li>
+					<li>Chemkin format: <a href="https://www.dropbox.com/s/avmt9ln2yy5msl9/mechanismChemkin.txt?dl=0">Complete mechanism</a>/<a href="https://www.dropbox.com/s/cdlz0v50bcnel3z/highTMechChemkin.txt?dl=0">High temperature mechanism</a></li>
+					<li>FlameMaster format: <a href="https://www.dropbox.com/s/2bwy74wmnf378ys/mechanismFlameMaster.txt?dl=0">Complete mechanism </a>/<a href="https://www.dropbox.com/s/ujrw9aqq1ojpzgg/highTMechFlameMaster.txt?dl=0">High temperature mechanism</a></li>
+					<li><a href="https://www.dropbox.com/s/gdexlpqq7um31o4/thermo.txt?dl=0">Thermodynamic data</a></li>
+					<li><a href="https://www.dropbox.com/s/ttnrd2qj1e7rw6y/trans.txt?dl=0">Transport data</a></li>
+					</ul>
+                    
+                    <br/>                    
+                </div><!-- contents -->
+            </td>
 
-<table border="1" cellspacing="1" cellpadding="5" width="100%">
-<tr>
-<td>
-<h2> Mechanisms </h2>
-All mechanism are made available and have been validated as discussed in the journal articles.
-</td>
-</tr>
-
-
-
-<tr>
-<td>
-<h2> Alma mater</h2>
-<a href="http://www.sknspmcvv.org">VIVEKANANDA VIDYALAYA</a></br>
-<a href="http://www.davgirlsgopalapuram.com">DAV</a></br>
-<a href="http://www.iitm.ac.in">IIT MADRAS</a></br>
-<a href="http://www.stanford.edu">STANFORD</a></br>
-</td>
-</tr>
-
+        </tr>
+    </table>
+   
 </body></html>
