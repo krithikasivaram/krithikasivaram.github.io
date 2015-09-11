@@ -1,0 +1,299 @@
+%______________________________________________________________________________________________________________________
+% @brief    LaTeX2e Resume for Krithika Narayanaswamy
+\documentclass[margin,line]{resume}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{hyperref}
+\usepackage{fullpage}
+\usepackage{lmodern}
+\addtolength{\oddsidemargin}{-0.75in}
+
+\usepackage{marvosym}
+
+%\addtolength{\bottommargin}{0}
+\addtolength{\textheight}{0.6in}
+\renewcommand{\familydefault}{\sfdefault}
+%______________________________________________________________________________________________________________________
+\begin{document}
+\name{\Large Krithika Narayanaswamy \hspace{55mm} \small \Letter \small kn295@cornell.edu \hspace{5mm}\url{krithikasivaram.github.io}}
+\begin{resume}
+\section{\mysidestyle Academic appointment} Assistant Professor, \\
+Department of Mechanical Engineering, \\
+Indian Institute of Technology Madras, \\
+Chennai 600036, \\
+India \\
+%__________________________________________________________________________________________________________________
+    % Education
+    \section{\mysidestyle Education}
+
+    \textbf{Stanford University} \hfill \textbf{September 2008 -- December 2013}\\ \vspace{-3mm}
+        \begin{list2}
+        	\item \textsl{Doctor of Philosophy}, Mechanical Engineering
+		\item \textsl{Doctor of Philosophy Minor}, Aerospace Engineering
+		\item \textsl{Master of Science}, Mechanical Engineering
+    \end{list2}
+    
+    \textbf{Indian Institute of Technology Madras} \hfill \textbf{2004 -- 2008} \\ \vspace{-3mm}
+    \begin{list2}
+        \item \textsl{Bachelor of Technology}, Mechanical Engineering
+    \end{list2}    
+    \vspace{1mm}
+    
+    %__________________________________________________________________________________________________________________
+    % Research Interests
+    \section{\mysidestyle Research Interests}
+
+    Combustion, Chemical kinetics, Reduced order modeling
+  
+      \vspace{1mm}
+
+%__________________________________________________________________________________________________________________
+    % Professional Experience
+    \section{\mysidestyle Research Experience}
+    \textbf{Cornell University} \hfill \textbf{2014 -- May 2015} \\
+    \textsl{Post-doctoral associate, Sibley school of Mechanical and Aerospace Engineering} \\
+Working with Dr. Perrine Pepiot, on 
+    \begin{list2}
+        	\item \textbf{Analyzing multi-component fuel effects in flames using simulations: {\it Current research project}} \\
+%	\begin{list2}
+%		\item Performed detailed numerical simulations of a laminar triple flame burning a multi-component fuel in an existing computational framework, {\it NGA}
+%		\item Using finite rate chemistry and detailed transport of species
+%		\item Analytically treated jacobian matrix occurring in chemical kinetic calculations
+%		\item Heat release profiles of the lean and rich branches of the triple flame are compared to their unstretched 1D counterparts to identify similarities
+%		\item Individual contribution of fuel components towards radicals are quantified using importance coefficients based on analysis of chemical network
+%	\end{list2}
+	\indent Triple flames play an important role in the stabilization of lifted jet flames and thereby influence their lift-off height. In this study, a 2D laminar triple flame burning jet fuel is simulated using finite rate chemistry and detailed transport of species. The jet fuel is represented by using a surrogate mixture, comprised of {\it n}-dodecane, methylcyclohexane, and {\it m}-xylene. The chemical kinetics of this multi-component surrogate are described using a reduced model derived from a well-validated detailed mechanism. 
+	%The structure of the simulated triple flames is explored by examining the reactivity of the different hydrocarbons in the multi-component fuel and the radical profiles. 
+	The heat release profiles of the lean and rich branches of the triple flame are compared to their unstretched 1D counterparts to identify similarities. Individual contribution of fuel components towards radicals are quantified using importance coefficients based on analysis of chemical network. 
+%	\item \textbf{Surrogate including liquid phase combustion effects:} {\it Current research project} \\
+%%    \begin{list2}
+%%    	\item Detailed simulation of a droplet burning in low gravity conditions
+%%	\item Using finite rate chemistry and detailed transport of species
+%%	\item Incorporate evaporation rate of droplet as a target in the surrogate definition procedure
+%%    \end{list2}	
+%%Surrogates are often used to represent real fuels in combustion simulations, and are defined in such a way as to mimic certain target properties of the real fuel. For gas phase combustion applications, these targets are mainly: (a) H/C ratio for the overall heating value and burning rate, (b) cetane number for the ignition characteristics, (c) molecular weight, (d) average molecular formula, and (e) Threshold Sooting Index (TSI) to quantify the sooting tendency. These gas-phase targets are oblivious to situations where multiphase processes, such as spray injection, are important. 
+%Distillation curves, which are often matched between the real fuel and the surrogate for physical property matching, might not be the best target to represent multiphase effects in a combusting environment. Instead, studying combustion characteristics of an isolated droplet allows to include basic evaporation and phase equilibrium dynamics of sprays in surrogate definition, also being amenable to detailed numerical modeling. Detailed simulations are performed to predict the burning process of isolated fuel droplets at low gravity for neat fuel components as well as mixtures of hydrocarbons relevant as transportation fuel surrogates. The evaporation rate of the real fuel is integrated as a target into surrogate definition by deriving a suitable relation between the evaporation rate of the multi-component fuel mixture and that of the individual fuel components.
+    \end{list2}
+\vspace{1mm}
+
+    \textbf{Stanford University} \hfill \textbf{2008 -- 2013} \\
+    \textsl{Research Assistant, Flow Physics and Computational Engineering} \\
+Worked with Dr. Heinz Pitsch, on 
+    \begin{list2}
+        	\item \textbf{Proposing gas-phase surrogates for jet fuels}\\
+%	\begin{list2}
+%		\item Using a {\it constrained optimization approach}
+%		\item Desired surrogate is defined by matching targets relevant for gas-phase combustion between the surrogate and the real fuel
+%	\end{list2}
+Surrogates are often used to represent real fuels in combustion simulations. They are defined in a way as to mimic certain target properties of the real fuel. For gas phase combustion applications, typical targets are: (a) H/C ratio for overall heating value and burning rate, (b) cetane number for ignition characteristics, (c) molecular weight, (d) average molecular formula, and (e) Threshold Sooting Index (TSI) to quantify sooting tendency. In this study, surrogates were defined for jet fuels and Fischer-Tropsch fuels following a {\it constrained optimization} approach by minimizing the difference between the real fuel properties and those of the surrogate mixture. 
+%The multi-component surrogate fuel's properties are expressed as combinations of individual component properties, weighted by mole fractions or volume fractions appropriately. Structural group analysis is also used wherever applicable, for instance to determine threshold sooting index of the surrogate fuel.
+	\item \textbf{Formulating a consistent mechanism for oxidation of surrogate components \\}
+%    \begin{list2}
+%	\item Compact, reliable mechanism developed consisting of $369$ species and $2691$ reactions counted forward and backward separately
+%	\item Describes the oxidation of many hydrocarbons relevant as transportation fuel surrogates -- {\it n}-heptane, iso-octane, toluene, ethylbenzene, $\alpha$-methyl naphthalene, {\it m}-xylene, {\it n}-dodecane, and methylcyclohexane
+%	\item Extensive validation against available experimental data in 0D and 1D configurations
+%	\item Predicts low to high temperature kinetics of {\it n}-dodecane and methylcyclohexane
+%	\item Has the ability to predict polycyclic aromatic hydrocarbons and soot precursor chemistry
+%    \end{list2}
+In this study, building on top of a base mechanism for small hydrocarbons, a consistent kinetic model was developed to describe the oxidation of substituted aromatics, {\it n}-dodecane, and methylcyclohexane, which are important components of transportation fuel surrogates. An extensive validation for the individual fuel components was performed against several recent experimental data sets. The reaction model maintains a compact size and is hence amenable to chemical kinetic analysis. The ability to predict oxidation at low through high temperatures for {\it n}-dodecane and methylcyclohexane is another highlight of this reaction scheme. 
+%A consistent chemical mechanism was developed as a part of this work that can describe the kinetics of substituted aromatics, n-dodecane, and methylcyclohexane, which are important components of transportation fuel surrogates, in addition to n-heptane and iso-octane already described in the base mechanism in Ref. [17]. 
+%The ability of the proposed model to adequately describe the combustion behavior of n-dodecane and methylcy- clohexane at low through high temperatures is also noteworthy. 
+Further, the well-validated aromatic chemistry and pathways for formation of aromatics from methylcyclohexane oxidation enable the present reaction mechanism to be apt for assessing the formation of pollutants.% in engine exhaust.    
+\end{list2}
+\vspace{1mm}
+
+  \textbf{Indian Institute of Technology Madras} \hfill \textbf{2007} \\ 
+\textsl{Bachelor's Project} \\ 
+Worked with Prof. N. R. Panchapakesan, Department of Aerospace Engineering, on\\
+Aerodynamics of flow around rectangular cylinders. 
+
+\textbf{TVS Motors, Hosur, India} \hfill \textbf{2006} \\
+\textsl{Summer Internship} \\ 
+An analytical model for a mono-tube hydraulic shock absorber damper
+
+%\textbf{Indian Institute of Technology Madras} \hfill \textbf{2006} \\ 
+%\textsl{Coursework Project}  \\
+%Devised a mechanical model to simulate catheter insertion in a virtual environment
+
+\textbf{Indian Institute of Science, Bangalore} \hfill \textbf{2005} \\ 
+\textsl{Summer Research Fellowship program}  \\ 
+Worked with Prof. Jaywant H. Arakeri, Department of Mechanical Engineering, \\
+Experiments to study natural convection in a tall vertical pipe
+
+\textbf{Indian Institute of Technology Madras}  \hfill \textbf{2005} \\
+\textsl{Junior Year Project} \\ 
+Worked with Prof. Venkatarathnam, Department of Mechanical Engineering, \\
+Enabled virtual instrumentation using LabVIEW as a software tool
+\vspace{1mm}
+
+\section{\mysidestyle Teaching Experience}
+    \textbf{Stanford University} \hfill \textbf{2012} \\
+    \textsl{Teaching Assistant for ``ME351A: Fluid Mechanics'', Course instructor: Prof. Lester Su} \\
+   Responsibilities: 
+    \begin{list2}
+    \item Held office hours and graded assignment sheets
+    \item Assigned problems for the assignments and exams
+    \end{list2}
+ 
+%% \vspace{1in}   
+%%__________________
+%    % Publications
+%    \section{\mysidestyle Publications}
+%	\textbf{Journals} \\ 
+% 	Krithika Narayanaswamy, Heinz Pitsch, and Perrine Pepiot\\
+%    ``A chemical mechanism for low to high temperature oxidation of methylcyclohexane 
+%as a component of transportation fuel surrogates'', \textsl{Combustion and Flame}, in press.
+%
+% 	Krithika Narayanaswamy, Perrine Pepiot, and Heinz Pitsch,\\
+%    ``A chemical mechanism for low to high temperature oxidation of {\it n}-dodecane 
+%as a component of transportation fuel surrogates'', \textsl{Combustion and Flame}, $161$ ($2014$) $866$--$884$.
+%
+%	Krithika Narayanaswamy, Guillaume Blanquart, and Heinz Pitsch,\\
+%    ``A consistent chemical mechanism for oxidation of substituted aromatic species'' \\
+%    \textsl{Combustion and Flame}, $157$ ($10$) ($2010$) $1879$--$1898$. 
+%    
+%    \textbf{In preparation} \\
+%  	Krithika Narayanaswamy, Heinz Pitsch, and Perrine Pepiot,\\
+%    ``Chemical kinetic modeling of jet fuel surrogates'', in preparation to \textsl{Combustion and Flame}.
+%  
+%      	Krithika Narayanaswamy and Perrine Pepiot,\\
+%    ``Multi-component fuel effects in laminar triple flames of jet fuel surrogates'',  in preparation.
+%
+%\vspace{1mm}
+%%\newpage
+%    \section{\mysidestyle Conference}
+%	Krithika Narayanaswamy and Perrine Pepiot, \\
+%    	``Structure of a laminar triple flame of a jet fuel surrogate'' \\
+%Bulletin of the American Physical Society 59, November $24^{th}$, $2014$
+%
+%	Lara Backer, Krithika Narayanaswamy, and Perrine Pepiot, \\
+%	``Numerical investigation of spray ignition of a multi-component fuel surrogate''\\
+%Bulletin of the American Physical Society 59, November $23^{rd}$, $2014$
+%
+%    Krithika Narayanaswamy, Perrine Pepiot, and Heinz Pitsch,\\
+%   ``Jet Fuels and Fischer-Tropsch fuels - Surrogate definition and chemical kinetic modeling'' \\
+%\textsl{$8^{th}$ U.S. National Combustion Meeting}, University of Utah, Salt Lake City, May $22^{nd}$, $2013$
+%  
+%       Krithika Narayanaswamy, Perrine Pepiot, and Heinz Pitsch,\\
+%   ``Chemical mechanism for {\it n}-dodecane and methylcyclohexane as
+%components of transportation fuel surrogates'', \textsl{Thermal and Fluid Sciences Affiliates and Sponsors Conference}, Stanford University, $2012$
+%
+%    Krithika Narayanaswamy, Perrine Pepiot, and Heinz Pitsch,\\
+%   ``Progress in surrogate formulations for jet fuels'' \\
+%\textsl{Thermal and Fluid Sciences Affiliates and Sponsors Conference}, Stanford University, $2011$
+%
+%Krithika Narayanaswamy, Perrine Pepiot, and Heinz Pitsch,\\
+%   ``Towards Surrogate formulation for jet fuels'' \\
+%\textsl{Thermal and Fluid Sciences Affiliates and Sponsors Conference}, Stanford University, $2010$
+%
+%Krithika Narayanaswamy, Guillaume Blanquart, and Heinz Pitsch,\\
+%   ``A consistent chemical mechanism for oxidation of substituted aromatic species'' \\
+%\textsl{$6^{th}$ U.S. National Combustion Meeting}, University of Michigan, Ann Arbor, $2009$
+%
+%Krithika Narayanaswamy, Guillaume Blanquart, and Heinz Pitsch,\\
+%   ``A consistent chemical mechanism for oxidation of substituted aromatic species'' \\
+%\textsl{Thermal and Fluid Sciences Affiliates and Sponsors Conference}, Stanford University, $2009$
+%
+%\vspace{1mm}
+%
+%   \section{\mysidestyle Posters}    
+%   
+%     	Krithika Narayanaswamy, Perrine Pepiot, and Heinz Pitsch,\\
+%    ``Jet Fuels and Fischer-Tropsch fuels - Surrogate definition and chemical kinetic modeling'' \\
+%\textsl{Thermal and Fluid Sciences Affiliates and Sponsors Conference}, 
+%Stanford University, $2013$. 
+%
+%   Krithika Narayanaswamy, Perrine Pepiot, and Heinz Pitsch,\\
+%   ``Development of kinetic model for jet fuels and Fischer-Tropsch fuels'' \\
+%\textsl{$34^{th}$ Proceedings of Combustion Institute}, 
+%Warsaw University of Technology, Poland, August $4^{th}$, $2012$. 
+%
+%    Krithika Narayanaswamy, Perrine Pepiot, and Heinz Pitsch,\\
+%   ``Kinetic models for surrogate fuels'' \\
+%\textsl{$7^{th}$ U.S. National Combustion Meeting}, 
+%Georgia Institute of Technology, Atlanta, March $22^{nd}$, $2011$.
+%\vspace{1mm}
+%
+%   \section{\mysidestyle Invited Talks}
+%   
+%   Krithika Narayanaswamy, Perrine Pepiot, and Heinz Pitsch,\\
+%    ``A chemical kinetic model
+%for jet fuel surrogates'' \\
+%\textsl{Cornell Fluid Dynamics Seminar}, 
+%Cornell University, April $29^{th}$, $2014$.
+%
+%      	Krithika Narayanaswamy, Perrine Pepiot, and Heinz Pitsch,\\
+%    ``Development towards a chemical kinetic model
+%for transportation fuel surrogates'' \\
+%\textsl{Chemical Engineering Seminar}, 
+%Indian Institute of Technology Madras, September $6^{th}$, $2012$. 
+%
+%   	Krithika Narayanaswamy, Perrine Pepiot, and Heinz Pitsch,\\
+%    ``Development towards a chemical kinetic model
+%for transportation fuel surrogates'' \\
+%\textsl{High Temperature Gas Dynamics Seminar}, 
+%Stanford University, May $9^{th}$, $2012$.
+%
+%    %__________________________________________________________________________________________________________________
+    % Honours and Awards
+    \section{\mysidestyle Honors and\\Awards} 
+
+    \noindent
+    \begin{list}{\labelitemi}{\leftmargin=0em}
+    \item
+Merit certificate awarded by the Central Board of Secondary Education (CBSE)
+ for class XII examination for Chemistry and Mathematics, $2004$.
+    \item
+    Selected among top 10\% in the National Standard Examination in 
+Physics conducted by the Indian Association of Physics Teachers, $2003$
+    \item
+    One among $750$ students from a pool of about $350,000$ students to be awarded National Talent Search Examination Scholarship by the Central Government of India, $2000$
+    \end{list}
+    \vspace{1mm}
+
+%______________________________________________________________________________________________________________________
+
+%% Other Activities
+%    \section{\mysidestyle Other \\ Activities}
+%
+%    \noindent
+%    \begin{list}{\labelitemi}{\leftmargin=0em}
+%    \item Sanskrit language 
+%    \item Carnatic Music
+%    \vspace{1mm}
+%
+%    \end{list}
+
+%__________________________________________________________________________________________________________________
+    % Honours and Awards
+    \section{\mysidestyle Referees} 
+
+    \noindent
+    \begin{list}{\labelitemi}{\leftmargin=0em}
+    \item
+\textbf{Prof. Heinz Pitsch}\\
+Institut für Technische Verbrennung \\
+              RWTH Aachen University \\
+              Templergraben 64 \\
+              D-52056 Aachen, Germany \\
+              h.pitsch@itv.rwth-aachen.de
+     \item
+     \textbf{Prof. Perrine Pepiot} \\
+     $256$ Upson Hall \\
+     Sibley School of Mechanical and Aerospace Engineering \\
+     Cornell University \\
+     Ithaca, New York - 14853, USA \\
+      pp427@cornell.edu
+     \item
+     \textbf{Prof. Lester Su} \\
+     $440$ Escondido Mall \\
+     Stanford, California - 94305 \\     
+      lester.su@stanford.edu
+    \end{list}
+    \vspace{1mm}
+\end{resume}
+\end{document}
+
+
+%______________________________________________________________________________________________________________________
+% EOF
