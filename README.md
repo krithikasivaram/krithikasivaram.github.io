@@ -1,4 +1,4 @@
-krithikasivaram.github.io
+krithika.github.io
 =========================
 
-Homepage of Krithika Sivaram
+Homepage of Krithika
