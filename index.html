@@ -18,6 +18,14 @@ A:hover{color:red}
 
 <script>
 $(document).ready(function(){
+  $("#flip0").click(function(){
+    $("#panel0").slideToggle("slow");
+  });
+});
+</script>
+	
+<script>
+$(document).ready(function(){
   $("#flip1").click(function(){
     $("#panel1").slideToggle("slow");
   });
@@ -157,7 +165,7 @@ I am currently working with <a href="http://pepiot.mae.cornell.edu" target="_bla
 <div id="flip0">
 <li> K. Narayanaswamy, P. Pepiot "Simulation-driven formulation of transportation fuel surrogates", Combustion Theory and Modelling (under review).
 </div>
-<div id="panel1">
+<div id="panel0">
 	<ul style="list-style-type:square">
 	<li><a href="https://www.dropbox.com/s/6rqnp4dlg5w1zl1/Paper_SurOPTI.pdf?dl=0" target="_blank">Preprint*</a></li>
 	<!--<li><a href="http://www.sciencedirect.com/science/article/pii/S1540748916300554" target="_blank">Journal version</a></li>-->
