@@ -52,7 +52,7 @@ div.tab button.active {
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 700px;
+  max-width: 600px;
   position: relative;
   margin: auto;
 }
@@ -210,12 +210,13 @@ display:none;
 }
 </style>
 
-<script type="text/javascript">
+<!-- <script type="text/javascript"> 
 var image1 = new Image()
 image1.src = "images/wordle.jpg"
 var image2 = new Image()
 image2.src = "images/img4.jpg"
 </script>
+-->
 
 </head>
 
@@ -269,35 +270,39 @@ I am currently working with <a href="http://pepiot.mae.cornell.edu" target="_bla
 <tr>
 	<td width="100%">
 	My research focuses on development of chemical kinetic models to describe oxidation of fuels. I am interested in predicting global combustion characteristics of conventional and alternative fuels and interpreting these observations based on insights gained from molecular level kinetic descriptions. In the recent times, my team has been studying kinetics of oxygenated fuels, which being renewable and resulting in reduced emissions, are immediately relevant to the country's energy needs. 
-</br> </br> <i>If you are interested in being a part of our team, peruse the list of available projects to identify your interests and write to me with a subject line that includes the topic title.</i>
+</br> </br> <i>If you are interested in being a part of our team, peruse the list of available projects to identify your interests and write to me with a subject line that includes the title of the topic.</i>
 </td>
 </tr> 
 </table>
 
 <h2> <a href="project_writeup/MS_PhD_Winter_2017.html" target="_blank"> <center><i>Abstracts for topics floated for MS/PhD admissions (Winter 2017)</i></center></a></h2>
 
+<!-- <table>
+	<tr>
+		<td width = 100%> -->
 <h1><center> Research highlights </center></h1>
 <!-- Slide show from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow-->
 <div class="slideshow-container">
 
 <div class="mySlides fade">
   <center> <img src="research_highlights/surface_global.png" style="width:80%"> 
-  <br> </center>
+  <br> An alternative way to formulate transportation fuels surrogates using model predictions of gas-phase combustion targets is explored and compared to conventional approaches. This study suggests that in a computational modeling context, surrogate compositions should be determined not just based on global characteristics, as has been done so far, but also on the characteristics and predictive capabilities of the chemical kinetic
+  mechanism used for the simulations. </center>
 </div>
 
 <div class="mySlides fade">
   <center> <img src="research_highlights/time_taken_fast_algorithm.png" style="width:80%"> 
-  <br> </center>
+  <br> An accurate, fast, direct and robust algorithm to compute multi-component diffusion velocities has been proposed. To our knowledge, this is the  first provably accurate algorithm scaling at a computational complexity of O(N) in  nite precision. The above figure compares the total time taken by our proposed fast algorithm to compute diffusion velocities versus the total time taken by the iterative biconjugate gradient method. </center>
 </div>
 
 <div class="mySlides fade">
   <center> <img src="research_highlights/component_library_mixmatch.png" style="width:80%"> 
-  <br> </center>
+  <br> A flexible and evolutive component library framework has been proposed to derive short chemical mechanisms with only the necessary kinetics for the desired surrogate mixture. Figure showd the chemical model developed  our earlier works reorganized into this framework. A script to extract a chem- ical mechanism for a surrogate mixture, the kinetics of whose individual components are described in this parent chemical mechanism, is available under the tab <i> publications</i> </center>
 </div>
 
 <div class="mySlides fade">
   <center> <img src="research_highlights/tig_phi1_jetSurrogate_P20.png" style="width:80%"> 
-  <br> </center>
+  <br> Ignition delay times of JP-8/Jet-A fuels at stoichiometric fuel/air equivalence ratios: Symbols - experimental data from several sources. Simulations are performed by representing the real jet fuel as a surrogate containing 30.3% n-dodecane, 21.2% m-xylene, and 48.5% methylcyclohexane (mole %). The kinetics of this surrogate mixture are extracted from a multi-component reaction mechanism using the component library approach.  </center>
 </div>
 
 
@@ -316,6 +321,9 @@ I am currently working with <a href="http://pepiot.mae.cornell.edu" target="_bla
 
 </div>
 
+<!-- </tr>
+</td>
+</table> -->
 
 <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <div id="Current_Research" class="tabcontent">
@@ -327,7 +335,7 @@ I am currently working with <a href="http://pepiot.mae.cornell.edu" target="_bla
 <h2>Research Team</h2>
 <!-- <h4>Click each item for more details</h4> -->
 My research focuses on development of chemical kinetic models to describe oxidation of fuels. I am interested in predicting global combustion characteristics of conventional and alternative fuels and interpreting these observations based on insights gained from molecular level kinetic descriptions. In the recent times, my team has been studying kinetics of oxygenated fuels, which being renewable and resulting in reduced emissions, are immediately relevant to the country's energy needs. 
-</br> </br> <i>If you are interested in being a part of our team, peruse the list of available projects to identify your interests and write to me with a subject line that includes the topic title.</i>
+</br> </br> <i>If you are interested in being a part of our team, peruse the list of available projects to identify your interests and write to me with a subject line that includes the title of the topic.</i>
 
 <td width="25%">
 	<center><img src="./images/krithika.png" width="170">	</center> </br> </br>
@@ -432,10 +440,12 @@ Shanmugasundaram obtained his B. Tech and M.tech in Mechanical Engineering from 
 <td>
 <h2> <a id="Open_source_Codes"> Open source codes</a></h2>
 <ul>
-<li>	T. V. Vaisakh (M. Tech 2017) <a href="https://github.com/vaisakh-tv/Reaction-mechanism-Optimization">Reaction mechanism optimization</a>
-<li>	M. C. Sanjay (M. Tech 2017) <a href="https://github.com/mcsanjay/Program-input-to-THERM">SMILES based interface to Thermodynamic
-Property Estimation Using THERM</a>
-<li>   Rohit Khare <a href="dummy">Reduced mechanism based on Quasi-Steady State approximations</a>
+<li>  <a href="dummy">Reduced mechanism based on Quasi-Steady State approximations</a> (Credits: Rohit Khare)
+<li> <a href="https://github.com/vaisakh-tv/Reaction-mechanism-Optimization">Reaction mechanism optimization</a> (Credits: T. V. Vaisakh, M. Tech 2017)
+<li> <a href="https://github.com/mcsanjay/Program-input-to-THERM">SMILES based interface to Thermodynamic
+Property Estimation Using THERM</a> (Credits: M. C. Sanjay, M. Tech 2017)
+<li>  <a href="https://github.com/sivaramambikasaran/Fast_Multi_Component_Diffusion">Fast computation of multi-component diffusion velocities </a> (Credits: Sivaram Ambikasaran)
+<li>Component Library framework: <a href="https://www.dropbox.com/sh/51zin8ft08t2703/AADZcLs2UbVn7InLimuuIUqMa?dl=0" target="_blank">Mix-and-match mechanism generation tool</a></li>
 </ul>
 </td>
 </tr>
@@ -454,7 +464,7 @@ Property Estimation Using THERM</a>
 </div>
 <div id="panel0">
 	<ul style="list-style-type:square">
-	<li><a href="https://www.dropbox.com/s/6rqnp4dlg5w1zl1/Paper_SurOPTI.pdf?dl=0" target="_blank">Preprint*</a></li>
+	<li><a href="https://www.dropbox.com/s/kismsuz6r0vhz13/Paper_SurOPTI.pdf?dl=0" target="_blank">Preprint*</a></li>
 	<!--<li><a href="http://www.sciencedirect.com/science/article/pii/S1540748916300554" target="_blank">Journal version</a></li>-->
 	</ul>
 </div>	
@@ -602,24 +612,28 @@ All mechanism are made available and have been validated as discussed in the jou
 <!-- <a id="Available_research_projects"> Write-up coming soon ... </a> -->
 Write-up coming soon ...
 <ul>
-	<li> <a href="project_writeup/Alternative_Fuel_Combustion.html"> Alternative Fuel Combustion </a> 
+	<li> <a href="project_writeup/Alternative_Fuel_Combustion.html" target="_blank"> Alternative Fuel Combustion </a> 
 <!-- Development of kinetic model for Fischer-Tropsch fuels -->
 	<li> Development of kinetic model for oxygenated fuels (knock-reduction additives)
-	<li> <a href="project_writeup/Biodiesel_Combustion.html"> Biodiesel Combustion </a>
+	<li> <a href="project_writeup/Biodiesel_Combustion.html" target="_blank"> Biodiesel Combustion </a>
 		<!--Analysis of the importance of unsaturated ester representatives in biodiesel surrogates -->
 	<li> Automatic reaction mechanism generation
-	<li> <a href="project_writeup/Optimization_in_Combustion.html"> Optimization in Combustion </a> 
+	<li> <a href="project_writeup/Optimization_in_Combustion.html" target="_blank"> Optimization in Combustion </a> 
 		<!-- Mechanism optimization framework -->
-	<li> <a href="project_writeup/Reduced_Reaction_Models_For_Combustion.html"> Methods for mechanism reduction </a> 
+	<li> <a href="project_writeup/Reduced_Reaction_Models_For_Combustion.html" target="_blank"> Methods for mechanism reduction </a> 
 	<li> Development of structure based compact reaction models
 	<li> Development of canonical kinetics solvers and post-processing tools
 	<li> Simulation driven surrogate formulation
 	<li> Defining surrogate for liquid-phase applications
 	<li> Thermodynamic property estimation for cyclic species
 </ul>
+
 </td>
 </tr>
 </table>
+
+<h2> <a href="project_writeup/MS_PhD_Winter_2017.html" target="_blank"> <center><i>Abstracts for topics floated for MS/PhD admissions (Winter 2017)</i></center></a></h2>
+
 </div>
 	
 <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
@@ -699,7 +713,8 @@ function openCity(evt, cityName) {
 document.getElementById("defaultOpen").click();
 </script>
 
-<script>
+<!-- The commented set below for static slideshow -->
+<!-- <script>
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -727,6 +742,23 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 </script>
+-->
 
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
 
 </body></html>
