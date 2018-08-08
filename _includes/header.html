@@ -1,0 +1,23 @@
+ <!--  <nav class="navbar with-shadow navbar-inverse navbar-expand-sm navbar-light fixed-top bg-light"> -->
+ <nav class="navbar with-shadow navbar-inverse navbar-expand-sm fixed-top">
+
+    <a href="home"> <img src="/images/iitm.jpg" width=60 hspace=20 /> </a>   
+    <div class="topnav">
+      <!-- Navigation Links -->
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          {% for node in site.pages %}
+            {% if node.title %}
+              {% if page.url == node.url %}
+                <li class="nav-item active"  style="background-color: DarkOrange";>
+              {% else %}
+                <li class="nav-item">
+              {% endif %}
+             <!--   <a class="nav-link" href="{{ node.url | prepend: site.baseurl }}"> {{ node.title }} </a> -->
+                <a class="nav-link" href="{{ node.url | prepend: site.url }}"> {{ node.title }} </a>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+        </div>
+    </nav>

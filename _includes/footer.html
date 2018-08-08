@@ -1,0 +1,109 @@
+<div class="container">
+<footer>
+  <p class="float-right"><a href="#">Back to top</a></p>
+  <p>Computational Chemistry and Combustion | IIT Madras &copy; 2018 </p>
+</footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<script src="/js/marquee.js" ></script>
+
+<script type="text/javascript">
+ 
+  var collab = $('.collab-section marquee').marquee('pointer').mouseover(function () {
+    $(this).trigger('stop');
+}).mouseout(function () {
+    $(this).trigger('start');
+}).mousemove(function (event) {
+    if ($(this).data('drag') == true) {
+          this.scrollLeft = $(this).data('scrollX') + ($(this).data('x') - event.clientX);
+            }
+}).mousedown(function (event) {
+    $(this).data('drag', true).data('x', event.clientX).data('scrollX', this.scrollLeft);
+}).mouseup(function () {
+    $(this).data('drag', false);
+}).on('jumpstart', function(event) {
+ this.scrollLeft = 1000;
+});
+
+ collab.trigger('jumpstart');
+
+</script>
+
+{% if page.title == "Publications" %}
+<script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+<script type="text/javascript">
+    var options = {
+        valueNames: ['pub-title', 'pub-authors', 'pub-year']
+      }
+
+    var pubList = new List('pub-container', options);
+    pubList.on("sortComplete",  function(event) {
+
+      var _sortBy = $(".sort.asc, .sort.desc").children("strong").html().trim();
+      if (_sortBy != "Year") 
+        return ;
+
+      var pubs = $("#publication-list li");
+      var index, pub_count, publication, yearly_count;
+
+      var current_year =parseInt( $(pubs[0]).children("span.pub-year").html().substr(1, 4));
+      
+      yearly_count = 0;
+      var successor =  $(pubs[0]);
+      for(index=0, pub_count = pubs.length; index < pub_count; index++) {
+        var pub = $(pubs[index]);
+        var year = parseInt(pub.children("span.pub-year").html().replace(/\(|\)/g, ''));
+
+        if (year != current_year) {
+          successor.before('<li class="year-headers"> '+ current_year +'<span class="text-muted small"> ( '+ yearly_count +' publications ) </span></li>');
+          current_year = year;
+          successor = pub;
+          yearly_count = 1;
+          
+        }
+        else {
+          yearly_count++;
+          
+        }
+      }
+
+      successor.before('<li class="year-headers"> '+ current_year +'<span class="text-muted small"> ( '+ yearly_count +' publications ) </span></li>');
+      
+    });
+
+    pubList.sort('pub-year', {order :"desc"});
+
+</script>
+{% endif %}
+
+{% if page.title == "People" or page.title =="Management" %}
+<script type="text/javascript">
+  $('#people-tabs a').click(function (e) {
+        //e.preventDefault()
+        $(this).tab('show')
+  })
+</script>
+{% endif %}
+
+{% if page.title == "Research" %}
+<script type="text/javascript">
+
+  $('body').scrollspy({target: '#research-sidenav', offset: 83});
+
+  $(window).on('scroll', function (event) {
+     var SIDENAV_OFFSET = 280;
+     var scroll_pos = $(window).scrollTop();
+
+     if (scroll_pos > SIDENAV_OFFSET ) 
+        $("#research-sidenav").addClass('affix-top');
+     else
+        $("#research-sidenav").removeClass('affix-top');
+     
+  });  
+</script>
+{% endif %}
