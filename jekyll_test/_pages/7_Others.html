@@ -1,0 +1,145 @@
+---
+layout: default
+title: Others
+permalink: others
+---
+
+
+<div id="Others" class="tabcontent">
+<br><br><br>
+<table border="1" cellspacing="1" cellpadding="5" width="100%">
+<tr>
+<td>
+<h2> Alma mater</h2>
+<a href="http://www.sknspmcvv.org"  style="text-decoration:none;color:white" target="_blank">Vivekananda Vidyalaya, Perambur</a></br>
+<a href="http://www.davgirlsgopalapuram.com"  style="text-decoration:none;color:white" target="_blank">DAV Girls, Gopalapuram</a></br>
+<a href="http://www.iitm.ac.in"  style="text-decoration:none;color:white" target="_blank">Indian Institute of Technology Madras</a></br>
+<a href="http://www.stanford.edu"  style="text-decoration:none;color:white" target="_blank">Stanford University</a></br>
+<a href="http://www.cornell.edu"  style="text-decoration:none;color:white" target="_blank">Cornell University</a></br></br>
+</td>
+</tr>
+
+<tr>
+<td>
+<h2> Useful web-based tools</h2>
+<a href="http://arohatgi.info/WebPlotDigitizer/"  style="text-decoration:none;color:white" target="_blank">Web plot digitizer</a></br>
+<a href="http://www.tutorialspoint.com/codingground.htm"  style="text-decoration:none;color:white" target="_blank">Coding ground</a></br>
+<a href="https://www.overleaf.com"  style="text-decoration:none;color:white" target="_blank">WriteLaTeX</a></br>
+<a href="http://detexify.kirelabs.org/classify.html"  style="text-decoration:none;color:white" target="_blank">Detexify</a></br>
+<a href="https://www.wordclouds.com"  style="text-decoration:none;color:white" target="_blank">WordClouds</a></br></br>
+</td>
+</tr>
+
+<tr>
+<td>
+<h2> Unclassified </h2>
+<a href="gallery/gallery.html" style="text-decoration:none;color:white" target="_blank"> Gallery </a>  <br>
+<body link="gray">
+<a href="logger/logger.html" style="text-decoration:none;color:white" target="_blank"> Musings </a></br></br>
+</td>
+</tr>
+
+
+<tr>
+<td>
+<h2> My html testing-ground</h2>
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password','');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "c^3_iitm") {
+window.open('logger/logger.html');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Password Incorrect, Please Try Again.','');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<FORM>
+<input type="button" value="Creating password protected pages ..." onClick="passWord()">
+</FORM>
+
+<!--
+<form  method="post">
+<div>
+<textarea name="comments" id="comments" style="font-family:sans-serif;font-size:1.2em;">
+Hey... say something!
+</textarea>
+</div>
+<input type="submit" value="Submit">
+</form>
+-->
+
+</td>
+</td>
+</tr>
+
+</table>
+</div>
+
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+<script>
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+<!-- The commented set below for static slideshow -->
+<!-- <script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+-->
+
+
+
+
+</div>
+
