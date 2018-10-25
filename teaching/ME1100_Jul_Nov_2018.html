@@ -21,6 +21,24 @@ table, th, td {
 h3{
   margin-bottom: 0px;
 }
+
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 </style>
 </head>
 
@@ -29,11 +47,40 @@ h3{
 <center> <h1> ME1100: Undergraduate thermodynamics <br>
 Jul-Nov 2018 </h1>
 
-<td width="80%">
-<center><img src="./images/Calvin-And-Hobbes-Need-To-Make-A-Robot.jpg" width="600">
+<!-- <td width="90%">
+<center>
+ <figure>
+<img src="./images/Calvin-And-Hobbes-Need-To-Make-A-Robot.jpg" width="600">
+<figcaption>Calvin's view of Work </figcaption>
+<img src="./images/Calvin_Entropy.jpg" width="600">
+Calvin's view of entropy
 </center>
 </td>
-<br><br>
+<br><br> -->
+
+<!-- <td width="80%">
+<center>
+<ul>
+<li class="container1">
+    <img class="image" src="./images/Calvin-And-Hobbes-Need-To-Make-A-Robot.jpg" width="600"/>
+    <span class="caption">my caption </span>
+ </li>
+<li class="container2">
+    <img class="image" src="./images/Calvin-And-Hobbes-Need-To-Make-A-Robot.jpg"width="600"/>
+    <span class="caption">my caption</span>
+  </li>
+</center>
+</td>
+<br><br> -->  
+  
+ <div class="row">
+  <div class="column">
+    <img src="./images/Calvin-And-Hobbes-Need-To-Make-A-Robot.jpg" alt="Snow" style="width:95%">
+  </div>
+  <div class="column">
+    <img src="./images/Calvin_Entropy.jpg" alt="Forest" style="width:97%">
+  </div>
+</div> 
 
 <table border="1" cellspacing="5" cellpadding="5" width="100%">
 	<td width="100%">
@@ -50,8 +97,10 @@ Jul-Nov 2018 </h1>
 <h2>Lecture materials, Handouts, Exams </h2>
 
 <h3>Course Lectures </h3>
-<ul>	<li>
-<a href="https://owncloud.iitm.ac.in/index.php/s/lGo6RpBHLT30rj4" target="_blank">Lecture notes from Prof. TS</a> (same as on moodle) <br> <br>
+<ul>	
+<li><a href="https://owncloud.iitm.ac.in/index.php/s/lGo6RpBHLT30rj4" target="_blank">Lecture notes from Prof. TS</a> (same as on moodle) <br> 
+<li><a href="https://owncloud.iitm.ac.in/index.php/s/K17xxuNZaEYar2g" target="_blank">Chapter 8 of notes from Prof. TS </a>
+<br><br>
 	</ul>
 
 <h3> Lecture summary </h3>
