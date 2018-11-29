@@ -587,6 +587,9 @@ Rohit obtained his B. Tech in Mechanical Engineering from Vishwakarma Institute 
 <td>
 <ul>	
 <li> <h3>SMILES based interface to Thermodynamic Property Estimation Using THERM:</h3>
+	Fuels, both renewable and non-renewable, are major sources of energy. Reaction schemes describing the oxidation of fuels are increasingly incorporated within computations where the focus is in capturing reactivity and the amounts of emissions. Thermodynamic properties of the species, which include the heat of formation, specific heat capacity and entropy, must be provided as part of such a kinetic scheme. These properties are used in determining the (a) equilibrium constant and thereby, the (b) reverse reaction rate constant using the principle of microscopic reversibility and (c) the heat release term of the energy conservation equation.
+	<br><br>
+	To find the thermodynamic property values of a species, group additivity approach can be used, which is a simple and feasible method. It hinges on the idea that: for any species, the thermodynamic property values can be calculated as the sum of contributions to the property from all groups present in that species. THERM is a software that uses this method to find property values, taking in the group type, number of rotors and symmetry number of the species, as inputs. In this project, a program is developed that can calculate all the inputs needed for THERM, from either molfile or SMILES of a given species. This program is capable of processing any non-cyclic stable or single radical species, made up of carbon, hydrogen and oxygen atoms. The code is available open-source on <a href="https://github.com/mcsanjay/Program-input-to-THERM">github</a>.
 </td>
 </tr>
 </ul>
@@ -595,6 +598,9 @@ Rohit obtained his B. Tech in Mechanical Engineering from Vishwakarma Institute 
 <td>
 <ul>	
 <li> <h3>Reaction mechanism optimization:</h3>
+In this study, a framework for reaction mechanism optimization is developed and the idea has been implemented as a black box tool. This tool requires target information and uncertainty of rate constants as inputs. This modular Python script uses FlameMaster (Pitsch, H. FlameMaster v3.3.10) for kinetics simulations and NLopt for minimization of objective function. Numerical simulations are decoupled from the optimization by a response surface that approximates the target values as algebraic functions of normalized reaction rate constants. As opposed to the factorial design approach, a sensitivity based method adopted here (Davis et al. 2004). It generates a response surface with fewer computations, but with comparable accuracy. Finally, the minimization is carried out on an objective function indicative of the error between calculated and observed target values. To demonstrate the applicability of this tool, a reaction mechanism for n-heptane is considered.
+<br><br>
+Scope of performing optimization in multiple stages utilizing the underlying kinetic knowledge is also explored. The optimization tool developed as a part of this work is made available on <a href="https://github.com/vaisakh-tv/Reaction-mechanism-Optimization">github</a> in a black-box fashion for the use of the combustion community.
 </td>
 </tr>
 </ul>
