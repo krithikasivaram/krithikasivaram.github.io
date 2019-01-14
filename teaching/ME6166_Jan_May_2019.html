@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<title>ME6166: Combustion Technology</title>
+<head>
+<style type="text/css">
+body{color:white}
+body{font-family:"Palatino"}
+body{font-size: 1.1em;}
+body {margin: 1em; } 
+A:link{color:yellow}
+A:visited{color:yellow}
+A:hover{color:red}
+A:hover{color:red}
+h2   {color: lightpink;}
+h3  {color: powderblue;}
+}
+table, th, td {
+    border: 1px solid white;
+}
+h1{
+    margin-top: 4px;
+  margin-bottom: 4px;
+}
+h2{
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+h3{
+    margin-top: 4px;
+  margin-bottom: 4px;
+}
+p
+{
+  margin:0;
+  padding:0;
+}
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62002830-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</head>
+
+<body bgcolor = "black">
+
+<table border="0" cellspacing="1" cellpadding="1"  width="100%">
+<tr> <td><center> <h1> ME6166: Combustion Technology </td>
+<tr> <td><center> <h1> Jan-May 2019</h1> </center></td> </tr>
+</table>
+
+<table border="1" cellspacing="1" cellpadding="1"  width="100%">
+<tr><td width="50%">
+<h2> Instructors: </h2>
+<ul> <li> Dr. Krithika Narayanaswamy <br>
+# 203, Thermodynamics and Combustion Engineering Lab<br>
+Email: krithika@iitm.ac.in </li><br>
+<li> Dr. S. Varunkumar <br>
+# 206B, Thermodynamics and Combustion Engineering Lab<br>
+Email: varuns@iitm.ac.in </li>
+</ul> 
+
+<h2> General information: </h2>
+<ul> <li> 9 credit elective course </li>
+     <li> Open for B. Tech (8th sem), DD (8th, 10th sem), M. Tech, M.S, PhD </li><br>
+     <li> 3 lecture hours per week: E slot <br>
+		 <p><font color="lightgreen">Mondays 1-1:50 PM, Tuesdays 11-11:50 AM, Wednesdays: 10-10:50 AM</font></p></li>
+	  <li> Every second Thursday hour (8-8:50 AM) is a tutorial hour, unless stated otherwise </li><br>
+	  <li> <p><font color="lightgreen">Venue: TDCE seminar hall</font></p></li>
+      <li> Announcements via group mailing list</li>
+</ul>
+</td>
+
+<td width="50%"> 
+	<h2> Learning Outcomes: </h2>
+	<ul> <li> Thorough understanding of combustion phenomenon involved in different applications </li> 
+		 <li> Ability to design and analyse a combustion device. </li>
+	</ul>
+	
+	<h2> Pre-requisites: </h2>
+	<ul> <li> ME6060: Fundamentals of Combustion </li>
+    	 <li> Consent of Teacher is required if no prior coursework on combustion has been done. </li>
+	</ul>
+
+	<h2> Grading policy: </h2>
+	<ul> <li> Mid-semester exam (March 1--4): 50%</li>
+		 <li> Final exam: 50%</li>
+	</ul>
+
+    <h2> Questions?</h2>
+	<ul>
+		<li> Instructors' office hours: <br>
+			Friday 10-11 AM, <a href="https://goo.gl/maps/PqbdfLVkFJr" target="_blank"> TDCE</a> seminar hall </li><br>
+		<li> Teaching Assistants: <br>
+		 Syed Mughees Ali, Shanmugasundaram D.</li>
+	</ul>
+</td>
+</tr>
+</table>
+
+<table border="1" cellspacing="1" cellpadding="1"  width="100%">
+<tr> <td width="100%"><h2> Suggested Textbooks: </h2>
+<ul> 
+    <li> Combustion Technology: Essentials of Flames and Burners, by V. Raghavan, Ane/Athena Books, 2016 (VR) </li>
+    <li> Combustion and Mass transfer by D. B. Spalding, 1979 (DBS) </li>
+    <li> Combustion Theory by F. A. Williams, ABP (FAW), 1985 </li>
+    <li> Understanding Combustion by H. S. Mukunda, Macmillan India (HSM) </li>
+    <li> Combustion Physics by C. K. Law (CKL) </li>
+	<li> Theoretical and Numerical Combustion by Thierry Poinsot and Denis Veynante, 2016 (TP)</li>
+	<li> An Introduction to Combustion Concepts and Applications by S.R. Turns, McGraw Hill </li> 
+	<li> Principles of Combustion by Kenneth Kuo, John Wiley </li>
+    <li> Fuels and Combustion, Smith and Stinson, McGraw Hill, New York, 1952 </li>
+    <li> Combustion and Gasification in Fluidized Beds, Taylor & Francis Group, LLC, 2006 </li>
+</ul>
+</tr>
+</table>
+
+
+<br><br>
+<table border="1" cellspacing="2" cellpadding="2"  width="100%">
+	<col width = "73%">
+	<col width = "27%">	
+	<tr> <th> <h2> Course outline</h2>
+		 <th> <h2> Reading </h2>
+	</tr> 
+</table><br>
+
+<h3>Module 1: Premixed flames, with bunsen burner as an example</h3>
+
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+	<col width = "73%">
+	<col width = "27%">	
+   <tr> 
+	<td> Notion of flame speed, global energy balance to derive relations between flame speed, thermochemistry and kinetics </td>
+	<td> FAW $5.1.2</td> </tr>
+	
+	<tr> <td> Dependence of SL on various parameters </td>
+	<td> CKL $7.7 </td></tr>
+	
+	<tr> <td> 1D conservation laws for steady laminar premixed flames  </td>
+	<td> CKL $5.1/TP $2.3 </td></tr>
+	
+	<tr> <td> Flame speed calculations using FlameMaster </td>
+	<td> <a href="https://owncloud.iitm.ac.in/public.php?service=files&t=ju2N6Pgpfy2VyLv" target="_blank">PREMIX documentation</a> </td></tr>
+	
+	<tr> <td> Flammability, Quenching, and ignition energy  </td>
+	<td> HSM 7.1, 7.2, 8.0 </td></tr>
+	
+	<tr> <td> Turbulent premixed flames  </td>
+	<td> CKL $11.1, $11.2, $11.3 </td></tr>
+</table><br>
+
+<h3> Module 2: Non-premixed flames, with counterflow diffusion flame as an example </h3>
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+	<col width = "73%">
+	<col width = "27%">	
+   <tr> 
+	<td> Using opp-diff burner as example, introduce counterflow non-premixed flames. </td>
+	<td> </td> </tr>
+	
+	<tr> <td> Governing equations in physical space, methodology for calculating opp-diff flame structure at different strain rates using FlameMaster. </td>
+	<td>  </td></tr>
+	
+	<tr> <td> Transformation of 1D conservation laws into mixture fraction space  </td>
+	<td> </td></tr>
+	
+	<tr> <td> Flamelet equation and the concept of scalar dissipation rate and its relation to reaction rates at different strain rates.   </td>
+	<td> </td></tr>
+		
+	<tr> <td> Turbulent non-premixed flames  </td>
+	<td>  </td></tr>
+</table><br>
+
+<h3> Module 3: Burners for gaseous fuels </h3>
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+	<col width = "73%">
+	<col width = "27%">	
+   <tr> 
+	<td> Domestic LPG stove burner - design concepts </td>
+	<td> </td> </tr>
+	
+	<tr> <td> MILD combustion - Theory of extinction of well-stirred reactors  </td>
+	<td>  </td></tr>
+	
+	<tr> <td> Stationary gas turbines - Blow off criteria, design criteria </td>
+	<td> </td></tr>
+	
+</table><br>
+
+<h3> Module 4: Spray combustion and applications</h3>
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+	<col width = "73%">
+	<col width = "27%">	
+   <tr> 
+	<td> Basics of atomization and types of injectors</td>
+	<td> </td> </tr>
+	
+	<tr> <td> Droplet combustion theory </td>
+	<td>  </td></tr>
+	
+	<tr> <td> Spray combustion: (i) Modifications to flamelet model to include droplets </td>
+	<td> </td></tr>
+
+	<tr> <td> Spray combustion: (ii) Aerodynamics and stability of spray flames  </td>
+	<td> </td></tr>
+
+	<tr> <td> Spray combustion: (iii) Application in gas turbines and LP rockets  </td>
+	<td> </td></tr>
+	
+</table><br>
+
+<h3> Module 5: Solid fuel combustion </h3>
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+	<col width = "73%">
+	<col width = "27%">	
+   <tr> 
+	<td> Single particle combustion theory for coal and biomass</td>
+	<td> </td> </tr>
+	
+	<tr> <td> Combustion in pulverized coal burners</td>
+	<td>  </td></tr>
+	
+	<tr> <td> Combustion and gasification of coal in fluidized bed systems - design considerations </td>
+	<td> </td></tr>
+
+	<tr> <td> Flame propagation in packed beds and its application in design of moving grate furnaces</td>
+	<td> </td></tr>
+	
+</table><br>
+
+<!-- ><h2> Lecture summary </h2>
+<ul><li>	 	
+ <a href="https://owncloud.iitm.ac.in/index.php/s/CWEgX19vEdgpOR7" target="_blank">Chemical Thermodynamics</a><br>
+	<li> <a href="https://owncloud.iitm.ac.in/index.php/s/3zKvto5tV5JEIQD" target="_blank">Kinetics</a><br>
+	<li> <a href="https://owncloud.iitm.ac.in/index.php/s/8ImrgDykQLHleWw" target="_blank">Transport, Governing Equations</a><br>
+	<li> <a href="https://owncloud.iitm.ac.in/index.php/s/dxwRahgQjfeS41Y" target="_blank">Stefan flow</a><br>
+	<li> <a href="https://owncloud.iitm.ac.in/index.php/s/tMJFeh8fiK9cInP" target="_blank">Premixed flames I</a>, <a href="https://owncloud.iitm.ac.in/index.php/s/RFC5L7jz6kAn2xU" target="_blank">Premixed flames II</a><br>
+<li> <a href="https://owncloud.iitm.ac.in/index.php/s/4CQsThYuQCUKlhg" target="_blank">Non-premixed flames I</a>, <a href="https://owncloud.iitm.ac.in/index.php/s/2Kuf1U71Khwg64q" target="_blank">Non-premixed flames II</a><br>
+<li> <a href="https://owncloud.iitm.ac.in/index.php/s/9DRWH5fQabvFvGv" target="_blank">Limit phenomena I</a>, <a href="https://owncloud.iitm.ac.in/index.php/s/wfQgs6pha62r7L3" target="_blank">Limit phenomena II</a><br>
+<br> <br>
+	</ul>
+</td>
+
+<td width="50%">
+<h2>Tutorial sheets </h2>
+<ul>
+<li> <a href="https://owncloud.iitm.ac.in/index.php/s/aY2c71BzL2J5nj0" target="_blank">Tutorial 1</a><br>
+<li> <a href="https://owncloud.iitm.ac.in/index.php/s/cAMNq7Y35lBE9Ba" target="_blank">Tutorial 2</a><br>
+<li> <a href="https://owncloud.iitm.ac.in/index.php/s/bbkIeYYwlavx3Tw" target="_blank">Tutorial 3</a><br>
+<li> <a href="https://owncloud.iitm.ac.in/index.php/s/0zuorEEswMF1rbF" target="_blank">Tutorial 4</a><br>
+<li> <a href="https://owncloud.iitm.ac.in/index.php/s/p0bYTcRmOYrDdlV" target="_blank">Tutorial 5</a><br>
+<li> <a href="https://owncloud.iitm.ac.in/index.php/s/f2LITYHm3LVPj76" target="_blank">Tutorial 6</a><br>
+</ul>
+-->
+	
+</td>
+</tr>
+</table>
+
+</body></html>
