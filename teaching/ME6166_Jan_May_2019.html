@@ -13,7 +13,7 @@ A:visited{color:yellow}
 A:hover{color:red}
 A:hover{color:red}
 h2   {color: lightpink;}
-h3  {color: powderblue;}
+h3  {color: lightpink;}
 }
 table, th, td {
     border: 1px solid white;
@@ -21,14 +21,25 @@ table, th, td {
 h1{
     margin-top: 4px;
   margin-bottom: 4px;
+  margin-left: 4px;
 }
 h2{
   margin-top: 4px;
   margin-bottom: 4px;
+  margin-left: 4px;
+ 
 }
 h3{
     margin-top: 4px;
   margin-bottom: 4px;
+  font-size: 14pt;
+  margin-left: 4px;
+}
+h4{
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 12pt;
+  margin-left: 4px;
 }
 p
 {
@@ -45,6 +56,32 @@ p
   ga('create', 'UA-62002830-1', 'auto');
   ga('send', 'pageview');
 </script>
+  
+<style>
+.collapsible {
+  background-color: gray;
+  cursor: pointer;
+  padding: 2px;
+  width: text-width;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14pt;
+  font-family:"Palatino";
+}
+
+.active, .collapsible:hover {
+  background-color: slategray;
+}
+
+.content {
+  padding: 0 0px;
+  display: none;
+  overflow: hidden;
+  background-color: black;
+}
+</style>
+    
 </head>
 
 <body bgcolor = "black">
@@ -52,8 +89,10 @@ p
 <table border="0" cellspacing="1" cellpadding="1"  width="100%">
 <tr> <td><center> <h1> ME6166: Combustion Technology </td>
 <tr> <td><center> <h1> Jan-May 2019</h1> </center></td> </tr>
-</table>
+</table> 
 
+<button class="collapsible"><h3>View course info</h3></button>
+<div class="content">
 <table border="1" cellspacing="1" cellpadding="1"  width="100%">
 <tr><td width="50%">
 <h2> Instructors: </h2>
@@ -63,7 +102,7 @@ Email: krithika@iitm.ac.in </li><br>
 <li> Dr. S. Varunkumar <br>
 # 206B, Thermodynamics and Combustion Engineering Lab<br>
 Email: varuns@iitm.ac.in </li>
-</ul> 
+</ul>
 
 <h2> General information: </h2>
 <ul> <li> 9 credit elective course </li>
@@ -72,7 +111,6 @@ Email: varuns@iitm.ac.in </li>
 		 <p><font color="lightgreen">Tuesdays 11-11:50 AM, Wednesdays: 10-10:50 AM, Friday: 4:50-5:40 PM</font></p></li>
 	  <li> Every second Thursday hour (8-8:50 AM) is a tutorial hour, unless stated otherwise </li><br>
 	  <li> <p><font color="lightgreen">Venue: TDCE seminar hall</font></p></li>
-      <li> Announcements via group mailing list</li>
 </ul>
 </td>
 
@@ -104,9 +142,20 @@ Email: varuns@iitm.ac.in </li>
 </td>
 </tr>
 </table>
+</div><br>
 
 <table border="1" cellspacing="1" cellpadding="1"  width="100%">
-<tr> <td width="100%"><h2> Suggested Textbooks: </h2>
+<tr> <td width="100%"><h3> Grading policy: </h3>
+	<ul> <li> Mid-semester exam (March 1--4): 30%</li>
+		 <li> Final exam: 45%</li>
+		 <li> Demonstration reports: 20%. Groups of 2 or 3.</li>
+		 <li> Lecture notes: 5% <a href="https://owncloud.iitm.ac.in/public.php?service=files&t=M7omgwNiUEnrgG3" target="_blank">February Schedule</a>, <a href="https://owncloud.iitm.ac.in/public.php?service=files&t=8YtY5rA5G4JVuxz" target="_blank">LaTeX Template</a></li>
+	</ul>
+</tr>
+</table>
+	
+<table border="1" cellspacing="1" cellpadding="1"  width="100%">
+<tr> <td width="100%"><h3> Suggested Textbooks: </h3>
 <ul> 
     <li> Combustion Technology: Essentials of Flames and Burners, by V. Raghavan, Ane/Athena Books, 2016 (VR) </li>
     <li> An introduction to fire dynamics, Douglas Drysdale, 2011 (DD) </li>
@@ -125,11 +174,14 @@ Email: varuns@iitm.ac.in </li>
 <h3> <font color="pink">
 Updates/Announcements:</font></h3>
 <ul>
-	<li> 26/1: Reading exercise for premixed flame computations is added.</li>
-	<li> 28/1: Demo and tutorial schedule (tentative) added.</li>
+<li> 30/1: Tutorial on premixed flames is updated.</li></ul>
+	<button class="collapsible"><h4>Older announcements</h4></button>
+	<div class="content">
+	<ul>
 	<li> 29/1: Schedule for scribing the lectures has been added (see Grading policy).</li>
-	<li> 30/1: Tutorial on premixed flames is updated.</li>
-</ul>
+	<li> 28/1: Demo and tutorial schedule (tentative) added.</li>
+	<li> 26/1: Reading exercise for premixed flame computations is added.</li>
+</ul></div>
 </td></tr>
 </table>
 
@@ -148,7 +200,8 @@ Path-to-FlameMaster/Run/FlameMan/Prem/Unstretched </li>
 </td> </tr>
 </table><br>
 
-<h3><font color="white">Schedule for <font color="greenyellow">demonstrations</font> and <font color="khaki">tutorial sessions</font>:</font></h3>
+<button class="collapsible"><h3>View schedule for <font color="greenyellow">demonstrations</font> and <font color="khaki">tutorial sessions</font></h3></button>
+<div class="content">
 <table border="1" cellspacing="2" cellpadding="2" width="100%">
 	<col width = "65%">
 	<col width = "35%">		
@@ -181,8 +234,8 @@ Path-to-FlameMaster/Run/FlameMan/Prem/Unstretched </li>
 
 	<tr> <td> <font color="khaki">Solid fuel combustion</font></td>
 	<td> April 25th</td></tr>	
-
 </table>
+</div>
 
 <br><br>
 <table border="1" cellspacing="2" cellpadding="2"  width="100%">
@@ -194,8 +247,7 @@ Path-to-FlameMaster/Run/FlameMan/Prem/Unstretched </li>
 </table><br>
 
 
-<h3>Module 1: Premixed flames, with bunsen burner as an example: <a href="https://owncloud.iitm.ac.in/public.php?service=files&t=lyIOa7Wfcv0Vra0" target="_blank">Tutorial</a>, <a href="https://owncloud.iitm.ac.in/index.php/s/kQeLROs54Biyg0j" target="_blank">Reading Exercise</a></h3>
-
+<h3>Module 1: Premixed flames, with bunsen burner as an example: <a href="https://owncloud.iitm.ac.in/public.php?service=files&t=lyIOa7Wfcv0Vra0" target="_blank">Tutorial</a>, <a href="https://owncloud.iitm.ac.in/index.php/s/kQeLROs54Biyg0j" target="_blank">Reading Exercise</a> </h3>
 <table border="1" cellspacing="2" cellpadding="2" width="100%">
 	<col width = "65%">
 	<col width = "35%">	
@@ -219,7 +271,8 @@ Path-to-FlameMaster/Run/FlameMan/Prem/Unstretched </li>
 	<td> CKL $11.1, $11.2, $11.3, TP $5.3 </td></tr>
 </table><br>
 
-<h3> Module 2: Non-premixed flames, with counterflow diffusion flame as an example </h3>
+<button class="collapsible"><h3>Module 2: Non-premixed flames, with counterflow diffusion flame as an example</h3></button>
+<div class="content">
 <table border="1" cellspacing="2" cellpadding="2" width="100%">
 	<col width = "65%">
 	<col width = "35%">	
@@ -239,8 +292,10 @@ Path-to-FlameMaster/Run/FlameMan/Prem/Unstretched </li>
 	<tr> <td> Turbulent non-premixed flames  </td>
 	<td>  </td></tr>
 </table><br>
+</div><br>
 
-<h3> Module 3: Burners for gaseous fuels </h3>
+<button class="collapsible"><h3>Module 3: Burners for gaseous fuels</h3></button>
+<div class="content">
 <table border="1" cellspacing="2" cellpadding="2" width="100%">
 	<col width = "65%">
 	<col width = "35%">	
@@ -255,8 +310,10 @@ Path-to-FlameMaster/Run/FlameMan/Prem/Unstretched </li>
 	<td> </td></tr>
 	
 </table><br>
+</div><br>
 
-<h3> Module 4: Spray combustion and applications</h3>
+<button class="collapsible"><h3>Module 4: Spray combustion and applications</h3></button>
+<div class="content">
 <table border="1" cellspacing="2" cellpadding="2" width="100%">
 	<col width = "65%">
 	<col width = "35%">	
@@ -277,9 +334,12 @@ Path-to-FlameMaster/Run/FlameMan/Prem/Unstretched </li>
 	<td> </td></tr>
 	
 </table><br>
+</div><br>
 
-<h3> Module 5: Solid fuel combustion </h3>
-<table border="1" cellspacing="2" cellpadding="2" width="100%">
+<!--<h3> Module 5: Solid fuel combustion</h3> -->
+<button class="collapsible"><h3>Module 5: Solid fuel combustion</h3></button>
+<div class="content">
+	<table border="1" cellspacing="2" cellpadding="2" width="100%">
 	<col width = "65%">
 	<col width = "35%">	
    <tr> 
@@ -296,6 +356,7 @@ Path-to-FlameMaster/Run/FlameMan/Prem/Unstretched </li>
 	<td> </td></tr>
 	
 </table><br>
+</div>
 
 <!-- ><h2> Lecture summary </h2>
 <ul><li>	 	
@@ -325,5 +386,22 @@ Path-to-FlameMaster/Run/FlameMan/Prem/Unstretched </li>
 </td>
 </tr>
 </table>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 
 </body></html>
