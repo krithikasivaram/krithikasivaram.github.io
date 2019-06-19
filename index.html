@@ -248,6 +248,12 @@ background-color:black;
 padding:0px;
 display:none;
 }
+
+p.small {
+  font-size: 30pt;
+  font-variant: small-caps;
+  color: orange;
+}
 </style>
 
 <!-- <script type="text/javascript"> 
@@ -337,14 +343,15 @@ I am currently working with <a href="http://pepiot.mae.cornell.edu" target="_bla
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <center> <img src="research_highlights/surface_global.png" style="width:80%"> 
+<!--  <center> <a  href="#surrogate_formulation" onclick="openCity(event, 'Current_Research')"> <img src="research_highlights/surface_global.png" style="width:80%"> </a> -->
+  <center>  <img src="research_highlights/surface_global.png" style="width:80%"> 
   <br> An alternative way to formulate transportation fuels surrogates using model predictions of gas-phase combustion targets is explored and compared to conventional approaches. This study suggests that in a computational modeling context, surrogate compositions should be determined not just based on global characteristics, as has been done so far, but also on the characteristics and predictive capabilities of the chemical kinetic
   mechanism used for the simulations. </center>
 </div>
 
 <div class="mySlides fade">
   <center> <img src="research_highlights/time_taken_fast_algorithm.png" style="width:80%"> 
-  <br> An accurate, fast, direct and robust algorithm to compute multi-component diffusion velocities has been proposed. To our knowledge, this is the  first provably accurate algorithm scaling at a computational complexity of O(N) in  nite precision. The above figure compares the total time taken by our proposed fast algorithm to compute diffusion velocities versus the total time taken by the iterative biconjugate gradient method. </center>
+  <br> An accurate, fast, direct and robust algorithm to compute multi-component diffusion velocities has been proposed. To our knowledge, this is the  first provably accurate algorithm scaling at a computational complexity of O(N) in finite precision. The above figure compares the total time taken by our proposed fast algorithm to compute diffusion velocities versus the total time taken by the iterative biconjugate gradient method. </center>
 </div>
 
 <div class="mySlides fade">
@@ -357,6 +364,20 @@ I am currently working with <a href="http://pepiot.mae.cornell.edu" target="_bla
   <br> <p style="text-align:left;">  Ignition delay times of JP-8/Jet-A fuels at stoichiometric fuel/air equivalence ratios: Symbols - experimental data from several sources. Simulations are performed by representing the real jet fuel as a surrogate containing 30.3% n-dodecane, 21.2% m-xylene, and 48.5% methylcyclohexane (mole %). The kinetics of this surrogate mixture are extracted from a multi-component reaction mechanism using the component library approach.  </center>
 </div>
 
+<div class="mySlides fade">
+  <center> <img src="research_highlights/23spec_14step_results_Figd.png" style="width:80%"> 
+  <br> <p style="text-align:left;">   Extinction strain rates of DME-air mixtures, which are not available in the literature, are measured in a counter-flow diffusion flame burner.  A short kinetic mechanism consisting of 23 species and 88 elementary reactions is proposed to describe the oxidation of DME based on the detailed San Diego mechanism. In addition to the extinction data, the short mechanism accurately reproduces the available experimental data in the literature.    </center>
+</div>
+
+<div class="mySlides fade">
+  <center> <img src="research_highlights/mb_rcm_CNF_Figa.jpg" style="width:80%"> 
+  <br> <p style="text-align:left;"> A compact reaction scheme is derived for methylbutanoate from an existing detailed mechanism, revised based on recent experimental measurements and theoretical rate constant calculations. The revised kinetic model has been validated comprehensively against a wide range of experimental data along with ignition delays at intermediate temperatures measured in an RCM. </center>
+</div>
+
+<div class="mySlides fade">
+  <center> <img src="research_highlights/SL_mma.jpg.jpg" style="width:80%"> 
+  <br> <p style="text-align:left;">  In order to analyze the high temperature gas phase oxidation of PMMA, and thereby predict its fire behaviour (such as burning rate, temperature of the material and heat fluxes) with less computational effort, a compact kinetic model for the oxidation of its primary decomposition product, MMA, is most essential. A compact reaction model, consisting of 88 species and 1092 reactions is developed to describe the oxidation of MMA and validated against fundamental experimental datasets obtained in premixed flames, starting with a detailed mechanism proposed by the Lawrence Livermore group.  </center>
+</div>
 <!-- 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -516,7 +537,7 @@ Our research work falls under the broad headers listed below:
 <td>
 	<center>
 		<a href="#misc">
-	<h2>Mechanism Reduction, data-driven ignition prediction, and more ...</h2></a></center> 
+	<h2>Mechanism Reduction, data-driven ignition prediction, and more ...</h2></center> 
  <div class="row">
   <div class="column">
 		<figure>
@@ -526,7 +547,7 @@ Our research work falls under the broad headers listed below:
   </div>
   <div class="column">
 	<figure>
-      <img src="./research_highlights/component_library_mixmatch.png"  style="width: 97%; margin-left: 1%; margin-right: 1%;"> 
+      <img src="./research_highlights/component_library_mixmatch.png"  style="width: 97%; margin-left: 1%; margin-right: 1%;"> </a>
 <figcaption> Fig: Chemical model developed in our earlier works reorganized into the component library framework. </figcaption>
 </figure>
   </div>
@@ -543,7 +564,7 @@ Our research work falls under the broad headers listed below:
 </tr>
 </table>
 
-<h1>Description of work undertaken and planned ... </h1>
+<p class=small>Detailed description of Research work</p>
 <div>
 <h2 id="kinetics_small_oxygenates">Kinetics of small oxygenates </h2>
 	<table border="1" cellspacing="1" cellpadding="5" width="100%">
@@ -717,7 +738,7 @@ Currently, ideas to improve existing methods in order to to achieve reduced comp
 
 <div>
 	
-	<h2 id="mech_opt">Fast computation of multi-component diffusion velocities, Data-driven ignition predictions, and more ... </h2>
+	<h2 id="misc">Fast computation of multi-component diffusion velocities, Data-driven ignition predictions, and more ... </h2>
 <table border="1" cellspacing="1" cellpadding="5" width="100%">
 <tr>
 <td>
