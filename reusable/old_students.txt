@@ -1,0 +1,101 @@
+
+<tr>
+<td>
+
+<ul>	
+<li> <h3>Extinction studies of oxygenated fuels:</h3>
+ <center><img src="./current_research/oxygenates_rohit/diesel_blend_oxygenate.jpg"  style="float: right; width: 30%; margin-left: 2%; margin-bottom: 0.5em;"> </center> 
+Addition to oxygenates to diesel fuel has been found to reduce soot emissions. Nonetheless, the resulting changes in the extinction and auto-ignition characteristics of the fuel mixture have not yet been fully understood. Considering two important oxygenates, dimethyl ether and methanol, we undertook a fundamental analysis, which reveals that blending small amounts of oxygenates with diesel increases its resistance to extinction, which can be of use in applications such as burners, furnaces and pre-vaporizers. We also find that the auto-ignition characteristics are not altered much due to blending. This study suggests that in the presence of oxygenate, a combustion system can be made more stable even at higher strain rates and at the same time operate with reduced emissions. 
+</br> </br>
+<!-- </br> </br>
+<figure><center><img src="./current_research/oxygenates_rohit/a2EvsYF1.jpg"  style="float: left; width: 30%; margin-right: 1%; margin-bottom: 0.5em;"> </center>
+<figcaption> Fig: Diesel and blends of diesel and oxygenates: Variation of fuel mass fraction, YF,1, as a function of strain rate at extinction, a2,E (presented at the 10th U.S. National Combustion Meeting, 2017)  </figcaption> </figure> -->
+ 
+<br><br> <center><img src="./current_research/oxygenates_rohit/23spec_14step_results.jpg"  style="float: left; width: 52%; margin-right: 2%; margin-bottom: 0.5em;"> </center> 
+In order to critically evaluate the overall combustion behaviour of DME via numerical simulations, an accurate as well as compact kinetic mechanism to describe its oxidation is most essential. A short kinetic mechanism consisting of 23 species and 88 elementary reactions is proposed to describe the oxidation of DME based on the detailed San Diego mechanism. The short mechanism accurately reproduces the available experimental data for ignition delays, laminar flame speeds, and species profiles in flow reactors as well as jet-stirred reactors. 
+</br> </br>
+To assess the validity of this reaction mechanism in non-premixed systems, extinction strain rates of  DME-air mixtures, which are not available in the literature, are measured in a counter-flow diffusion flame burner. Details on the experimental set up can be found <a href=https://www.dropbox.com/s/r92rqrpryb71g3j/CFDF_Burner.pdf?dl=0" target="_blank"> here</a>.
+</br> </br>
+The 23-species reaction mechanism is able to predict the experimental data for extinction within the uncertainty limits. This mechanism is further reduced by introducing quasi-steady state assumptions for six intermediate species to finally obtain a 14-step global kinetic scheme. A code is developed in MATLAB to obtain these 14 global steps and their corresponding rate expressions in terms of the elementary reaction rates. The 14-step mechanism performs as good as the 23-species mechanism for all the experimental data sets tested for.
+</br>	
+
+<td width="25%">
+<center><img src="./images/Rohit_Khare.jpg" width="170">	
+</br>
+<h4><a href="https://rohitsanjaykhare.github.io" target="_blank">Rohit Sanjay Khare</a><br></h4>
+<!--B. Tech in Mechanical Engineering from Vishwakarma Institute of Technology, Pune</br>-->
+</center>
+Rohit obtained his B. Tech in Mechanical Engineering from Vishwakarma Institute of Technology, Pune in 2015. He received his Masters at IIT Madras in 2018, for his work on fundamental experimental and computational studies of extinction strain rates of oxygenated fuels and their blends with conventional fuels. His thesis was co-advised by Dr. V. Raghavan at IIT Madras. He is currently pursing his PhD with Dr. Alexandra Loukou and Prof. Dr.-Ing. Dimosthenis Trimis in the Combustion Technology department of the Engler-Bunte-Institute at Karlsruhe Institute of Technology.</p></br>
+<!--<table border="1" cellspacing="1" cellpadding="5" width="150%"> -->
+</td>
+</tr>
+</ul>
+<br><br>
+
+<tr>
+<td>
+<ul>	
+<li> <h3>SMILES based interface to Thermodynamic Property Estimation Using THERM:</h3>
+	Fuels, both renewable and non-renewable, are major sources of energy. Reaction schemes describing the oxidation of fuels are increasingly incorporated within computations where the focus is in capturing reactivity and the amounts of emissions. Thermodynamic properties of the species, which include the heat of formation, specific heat capacity and entropy, must be provided as part of such a kinetic scheme. These properties are used in determining the (a) equilibrium constant and thereby, the (b) reverse reaction rate constant using the principle of microscopic reversibility and (c) the heat release term of the energy conservation equation.
+	<br><br>
+	To find the thermodynamic property values of a species, group additivity approach can be used, which is a simple and feasible method. It hinges on the idea that: for any species, the thermodynamic property values can be calculated as the sum of contributions to the property from all groups present in that species. THERM is a software that uses this method to find property values, taking in the group type, number of rotors and symmetry number of the species, as inputs. In this project, a program is developed that can calculate all the inputs needed for THERM, from either molfile or SMILES of a given species. This program is capable of processing any non-cyclic stable or single radical species, made up of carbon, hydrogen and oxygen atoms. The code is available open-source on <a href="https://github.com/mcsanjay/Program-input-to-THERM">github</a>.
+
+<td width="25%">
+<center><img src="./images/Sanjay.jpg" width="170">	
+</br>
+<h4><a href="https://www.linkedin.com/in/vaisakh-t-v-4a3505112" target="_blank">M. C. Sanjay</a><br></h4>
+<!--B. Tech in Mechanical Engineering from Vishwakarma Institute of Technology, Pune</br>-->
+</center>
+<p>Sanjay obtained his B. Tech in Mechanical Engineering from NIT Calicut in 2015. He received his M. Tech in Thermal Engineering at IIT Madras in 2017. His project focused on thermodynamic property estimation. He is currently working as a scientific officer at the Nuclear Power Corporation of India Limited (NPCIL).</p></br>
+<!--<table border="1" cellspacing="1" cellpadding="5" width="150%"> -->
+</td>
+
+</td>
+</tr>
+</ul>
+
+<tr>
+<td>
+<ul>	
+<li> <h3>Reaction mechanism optimization:</h3>
+ <center><img src="./current_research/optimization_vaisakh/framework.jpg"  style="float: right; width: 44%; margin-left: 2%; margin-bottom: 0.5em;"> </center> 
+In this study, a framework for reaction mechanism optimization is developed and the idea has been implemented as a black box tool. This tool requires target information and uncertainty of rate constants as inputs. This modular Python script uses FlameMaster (Pitsch, H. FlameMaster v3.3.10) for kinetics simulations and NLopt for minimization of objective function. 
+<br><br>
+Numerical simulations are decoupled from the optimization by a response surface that approximates the target values as algebraic functions of normalized reaction rate constants. As opposed to the factorial design approach, a sensitivity based method adopted here (Davis et al. 2004). It generates a response surface with fewer computations, but with comparable accuracy. Finally, the minimization is carried out on an objective function indicative of the error between calculated and observed target values. To demonstrate the applicability of this tool, a reaction mechanism for n-heptane is considered.
+<br><br>
+Scope of performing optimization in multiple stages utilizing the underlying kinetic knowledge is also explored. The optimization tool developed as a part of this work is made available on <a href="https://github.com/vaisakh-tv/Reaction-mechanism-Optimization">github</a> in a black-box fashion for the use of the combustion community.
+ <center><img src="./current_research/optimization_vaisakh/result_opt.png" style="float: center; width: 44%; margin-right: 1%; margin-bottom: 0.5em;">
+ <img src="./current_research/optimization_vaisakh/features.jpg"   style="float: center; width: 48%; margin-right: 1%; margin-bottom: 0.5em;"> </center>
+
+<td width="25%">
+<center><img src="./images/Vaisakh.jpg" width="170">	
+</br>
+<h4><a href="https://www.linkedin.com/in/vaisakh-t-v-4a3505112" target="_blank">Vaisakh Vasudevan</a><br></h4>
+<!--B. Tech in Mechanical Engineering from Vishwakarma Institute of Technology, Pune</br>-->
+</center>
+Vaisakh obtained his B. Tech in Mechanical Engineering from NSS College of Engineering Palakkad in 2014. He received his M. Tech in Thermal Engineering at IIT Madras in 2017. His project focused on reaction mechanism optimization. He is currently working as a postgraduate engineer at <a href="https://www.linkedin.com/company/lennox_india_technology_centre?trk=ppro_cprof" target="_blank">Lennox India Technology Centre</a>, Chennai.</p></br>
+<!--<table border="1" cellspacing="1" cellpadding="5" width="150%"> -->
+
+</td>
+
+</td>
+</tr>
+</ul>
+
+<tr>
+<td>
+<ul>	
+<li> <h3>Fast multi-component diffusion within FlameMaster:</h3>
+</td>
+</tr>
+</ul>
+
+<!--<li> M. C. Sanjay (M. Tech 2017): <i> SMILES based interface to Thermodynamic Property Estimation Using THERM</br></i>
+<li> T. V. Vaisakh (M. Tech 2017): <i> Reaction mechanism optimization </i></br>
+<li> Kiran Kumar Yalamanchi (Dual Degree 2017)
+<li> Ankit Jain (Dual Degree 2017)
+</ul>
+-->
+</td>
+</tr>
+</table>
