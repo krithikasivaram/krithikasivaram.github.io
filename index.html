@@ -381,11 +381,10 @@ I am currently working with <a href="http://pepiot.mae.cornell.edu" target="_bla
 <table border="1" cellspacing="1" cellpadding="5" width="100%">
 <tr>
 <td>
-<h2 id="Group">Research</h2>
 <!-- <h4>Click each item for more details</h4> -->
 Our research focuses on development of chemical kinetic models to describe oxidation of fuels. I am interested in predicting global combustion characteristics of conventional and alternative fuels and interpreting these observations based on insights gained from molecular level kinetic descriptions. 
 
-<br><br>In the recent times, my team has been studying kinetics of oxygenated fuels, which being renewable and resulting in reduced emissions, are immediately relevant to the country's energy needs. In addition, we have also recently explored ideas to generate of compact reaction mechanisms and optimize kinetic schemes. 
+<br><br>In the recent times, my team has been studying kinetics of oxygenated fuels, which being renewable and resulting in reduced emissions, are immediately relevant to the country's energy needs. In addition, we have also recently explored ideas to generate compact reaction mechanisms and optimize kinetic schemes. 
 Our research work falls under the broad headers listed below:
 <!-- Some work carried out by our alumni are showcased <a href="#" onclick="openCity(event, 'Alumni')">here</a>. -->
 
@@ -682,15 +681,27 @@ While methylbutanoate is a saturated ester, the real biodiesel also contains a s
 <td>
 	<ul><li>	
 <h3>Reaction mechanism optimization:</h3>
- <center><img src="./current_research/optimization_vaisakh/framework.jpg"  style="float: right; width: 44%; margin-left: 2%; margin-bottom: 0.5em;"> </center> 
+ <center><img src="./current_research/optimization_vaisakh/framework.jpg"  style="float: right; width: 44%; margin-left: 2%; margin-right: 1%; margin-bottom: 0.5em;"> </center> 
 In this study, a framework for reaction mechanism optimization is developed and the idea has been implemented as a black box tool. This tool requires target information and uncertainty of rate constants as inputs. This modular Python script uses FlameMaster (Pitsch, H. FlameMaster v3.3.10) for kinetics simulations and NLopt for minimization of objective function. 
 <br><br>
 Numerical simulations are decoupled from the optimization by a response surface that approximates the target values as algebraic functions of normalized reaction rate constants. As opposed to the factorial design approach, a sensitivity based method adopted here (Davis et al. 2004). It generates a response surface with fewer computations, but with comparable accuracy. Finally, the minimization is carried out on an objective function indicative of the error between calculated and observed target values. To demonstrate the applicability of this tool, a reaction mechanism for n-heptane is considered.
 <br><br>
 Scope of performing optimization in multiple stages utilizing the underlying kinetic knowledge is also explored. The optimization tool developed as a part of this work is made available on <a href="https://github.com/vaisakh-tv/Reaction-mechanism-Optimization">github</a> in a black-box fashion for the use of the combustion community.
- <center><img src="./current_research/optimization_vaisakh/result_opt.png" style="float: center; width: 44%; margin-right: 1%; margin-bottom: 0.5em;">
- <img src="./current_research/optimization_vaisakh/features.jpg"   style="float: center; width: 48%; margin-right: 1%; margin-bottom: 0.5em;"> </center>
-
+	<center>
+ <div class="row">
+  <div class="column">
+		<figure>
+    <img src="./current_research/optimization_vaisakh/result_opt.png" style="float: center; width: 97%; margin-right: 1%; margin-bottom: 0.5em;">
+	<!--<figcaption> Fig: Flame speeds of methylmethacrylate at various unburnt fuel-air temperatures; symbols - experiments, lines - simulations </figcaption>-->
+	</figure>
+  </div>
+  <div class="column">
+	<figure>
+ <img src="./current_research/optimization_vaisakh/features.jpg"   style="float: center; width: 105%; margin-right: 1%; margin-bottom: 0.5em;"> 
+ <!-- <figcaption> Fig: Extinction strain rate as a function of fuel mass fraction for DME-air mixtures; symbols - experiments (present work), lines - simulations </figcaption> -->
+	</figure>
+  </div>
+</center>
 Currently, ideas to improve existing methods in order to to achieve reduced computational cost as well ensure consistency in the optimized models are being worked upon. 
 
 	<h4>Contributors: <a href="#people-vaisakh" onclick="openCity(event, 'People')"> Vaisakh Vasudevan</a>, <a href="#people-krunal" onclick="openCity(event, 'People')"> Krunal Rajeshkumar Panchal</a></h4> 
