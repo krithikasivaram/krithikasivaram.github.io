@@ -345,38 +345,37 @@ I am currently working with <a href="http://pepiot.mae.cornell.edu" target="_bla
 <div class="mySlides fade">
 <!--  <center> <a  href="#surrogate_formulation" onclick="openCity(event, 'Current_Research')"> <img src="research_highlights/surface_global.png" style="width:80%"> </a> -->
   <center>  <img src="research_highlights/surface_global.png" style="width:80%"> 
-  <br> An alternative way to formulate transportation fuels surrogates using model predictions of gas-phase combustion targets is explored and compared to conventional approaches. This study suggests that in a computational modeling context, surrogate compositions should be determined not just based on global characteristics, as has been done so far, but also on the characteristics and predictive capabilities of the chemical kinetic
-  mechanism used for the simulations. </center>
+  <br> Simulation-driven surrogate formulation. </center>
 </div>
 
 <div class="mySlides fade">
   <center> <img src="research_highlights/time_taken_fast_algorithm.png" style="width:80%"> 
-  <br> An accurate, fast, direct and robust algorithm to compute multi-component diffusion velocities has been proposed. To our knowledge, this is the  first provably accurate algorithm scaling at a computational complexity of O(N) in finite precision. The above figure compares the total time taken by our proposed fast algorithm to compute diffusion velocities versus the total time taken by the iterative biconjugate gradient method. </center>
+  <br>  Time taken by our proposed fast algorithm to compute diffusion velocities versus the total time taken by the iterative biconjugate gradient method. </center>
 </div>
 
 <div class="mySlides fade">
   <center> <img src="research_highlights/component_library_mixmatch.png" style="width:80%"> 
-  <br> <p style="text-align:left;"> A flexible and evolutive component library framework has been proposed to derive short chemical mechanisms with only the necessary kinetics for the desired surrogate mixture. Figure showd the chemical model developed in our earlier works reorganized into this framework. A script to extract a chemical mechanism for a surrogate mixture, the kinetics of whose individual components are described in this parent chemical mechanism, is available under the tab <i> publications</i> </p> </center>
+  <br> <p style="text-align:left;">Chemical model developed in our earlier works reorganized into the component library framework. </center>
 </div>
 
 <div class="mySlides fade">
   <center> <img src="research_highlights/tig_phi1_jetSurrogate_P20.png" style="width:80%"> 
-  <br> <p style="text-align:left;">  Ignition delay times of JP-8/Jet-A fuels at stoichiometric fuel/air equivalence ratios: Symbols - experimental data from several sources. Simulations are performed by representing the real jet fuel as a surrogate containing 30.3% n-dodecane, 21.2% m-xylene, and 48.5% methylcyclohexane (mole %). The kinetics of this surrogate mixture are extracted from a multi-component reaction mechanism using the component library approach.  </center>
+  <br> <p style="text-align:left;"> Ignition delays of jet fuel surrogate </center>
 </div>
 
 <div class="mySlides fade">
   <center> <img src="research_highlights/23spec_14step_results_Figd.png" style="width:80%"> 
-  <br> <p style="text-align:left;">   Extinction strain rates of DME-air mixtures are measured in a counter-flow diffusion flame burner.  A short kinetic mechanism consisting of 23 species and 88 elementary reactions is proposed to describe the oxidation of DME based on the detailed San Diego mechanism. In addition to the extinction data, the short mechanism accurately reproduces the available experimental data in the literature.    </center>
+  <br> <p style="text-align:left;">   Extinction strain rates of DME-air mixtures measured in a counter-flow diffusion flame burner. </center>
 </div>
 
 <div class="mySlides fade">
   <center> <img src="research_highlights/mb_rcm_CNF_Figa.jpg" style="width:80%"> 
-  <br> <p style="text-align:left;"> A compact reaction scheme is derived for methylbutanoate from an existing detailed mechanism, revised based on recent experimental measurements and theoretical rate constant calculations. The revised kinetic model has been validated comprehensively against a wide range of experimental data along with ignition delays at intermediate temperatures measured in an RCM. </center>
+  <br> <p style="text-align:left;"> ... </center>
 </div>
 
 <div class="mySlides fade">
   <center> <img src="research_highlights/SL_mma.jpg.jpg" style="width:80%"> 
-  <br> <p style="text-align:left;">  In order to analyze the high temperature gas phase oxidation of PMMA, and thereby predict its fire behaviour (such as burning rate, temperature of the material and heat fluxes) with less computational effort, a compact kinetic model for the oxidation of its primary decomposition product, MMA, is most essential. A compact reaction model, consisting of 88 species and 1092 reactions is developed to describe the oxidation of MMA and validated against fundamental experimental datasets obtained in premixed flames, starting with a detailed mechanism proposed by the Lawrence Livermore group.  </center>
+  <br> <p style="text-align:left;">  Flame speeds of methylmethacrylate at various unburnt fuel-air temperatures  </center>
 </div>
 <!-- 
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -471,19 +470,22 @@ Our research work falls under the broad headers listed below:
 	<h2>Kinetics of small oxygenates</h2>
   <div class="column">
 		<figure>
-    <img src="./research_highlights/SL_mma.jpg"  style="width: 97%; margin-left: 1%; margin-right: 1%; margin-bottom: 0.5em;"/>
+    <img src="./research_highlights/SL_mma.jpg"  style="width: 97%; margin-left: 1%; margin-right: 4%; margin-bottom: 0.5em;"/>
 	<figcaption> Fig: Flame speeds of methylmethacrylate at various unburnt fuel-air temperatures; symbols - experiments, lines - simulations </figcaption>
 	</figure>
   </div>
  
   <div class="column">
 	<figure>
-      <img src="./research_highlights/23spec_14step_results_Figd.png"  style="width: 97%; margin-left: 1%; margin-right: 1%;"> 
+      <img src="./research_highlights/23spec_14step_results_Figd.png"  style="width: 97%; margin-left: 4%; margin-right: 1%;"> 
 </a>
-<figcaption> Fig: Extinction strain rate as a function of fuel mass fraction for DME-air mixtures; symbols - experiments (present work), lines - simulations </figcaption>
+<figcaption> Fig: Extinction strain rates of DME-air mixtures are measured in a counter-flow diffusion flame burner. symbols - experiments (present work), lines - simulations</figcaption>
 </figure>
   </div>
 </center>
+	(Left) In order to analyze the high temperature gas phase oxidation of PMMA, and thereby predict its fire behaviour (such as burning rate, temperature of the material and heat fluxes) with less computational effort, a compact kinetic model for the oxidation of its primary decomposition product, MMA, is most essential. A compact reaction model, consisting of 88 species and 1092 reactions is developed to describe the oxidation of MMA and validated against fundamental experimental datasets obtained in premixed flames.
+<br><br>	
+	(Right) ... A short kinetic mechanism consisting of 23 species and 88 elementary reactions is proposed to describe the oxidation of DME based on the detailed San Diego mechanism. In addition to the extinction data, the short mechanism accurately reproduces the available experimental data in the literature. 
 	
 <tr>
 <td>
@@ -505,6 +507,11 @@ Our research work falls under the broad headers listed below:
   </div>
 </div>
 	</center>
+	
+(Left) A compact reaction scheme is derived for methylbutanoate, which is an important component of biodiesel surrogate. Starting with an existing detailed mechanism, revisions based on recent experimental measurements and theoretical rate constant calculations have been introduced. The revised kinetic model has been validated comprehensively against a wide range of experimental data along with ignition delays at intermediate temperatures measured in an RCM. 	
+<br><br>
+(Right)  Ignition delay times of JP-8/Jet-A fuels at stoichiometric fuel/air equivalence ratios: Symbols - experimental data from several sources. Simulations are performed by representing the real jet fuel as a surrogate containing 30.3% n-dodecane, 21.2% m-xylene, and 48.5% methylcyclohexane (mole %). The kinetics of this surrogate mixture are extracted from a multi-component reaction mechanism using the component library approach. 
+
 </tr>
 </td>
 	
@@ -517,7 +524,7 @@ Our research work falls under the broad headers listed below:
 	  <a href="#surrogate_formulation"><h2>Surrogate formulation</h2> 
 	  <figure>
     <img src="./research_highlights/surface_global.png"  style="width: 75%; margin-left: 1%; margin-right: 1%; margin-bottom: 0.5em;"/> </a>
-	<figcaption> Fig: Surrogate compositions should be determined not just based on global characteristics, as has been done so far, but also on the characteristics and predictive capabilities of the chemical kinetic mechanism used for the simulations. </figcaption> 
+	<figcaption> Fig: Simulation-driven surrogate formulation </figcaption> 
 	</figure>
   </div>
   <div class="column">
@@ -529,6 +536,11 @@ Our research work falls under the broad headers listed below:
   </div>
 </div>
 	</center>
+(Left) An alternative way to formulate transportation fuels surrogates using model predictions of gas-phase combustion targets is explored and compared to conventional approaches. This study suggests that in a computational modeling context, surrogate compositions should be determined not just based on global characteristics, as has been done so far, but also on the characteristics and predictive capabilities of the chemical kinetic
+  mechanism used for the simulations.
+<br><br>
+(Right) A framework for reaction mechanism optimization is developed and the idea has been implemented as a black box tool. Scope of performing optimization in multiple stages utilizing the underlying kinetic knowledge is also explored. 
+	
 </tr>
 </td>
 
@@ -554,6 +566,10 @@ Our research work falls under the broad headers listed below:
 </div>
 	</center>
 	<br>
+	
+	(Left) An accurate, fast, direct and robust algorithm to compute multi-component diffusion velocities has been proposed. To our knowledge, this is the  first provably accurate algorithm scaling at a computational complexity of O(N) in finite precision. The above figure compares the total time taken by our proposed fast algorithm to compute diffusion velocities versus the total time taken by the iterative biconjugate gradient method. 
+	<br><br>
+	(Right) A flexible and evolutive component library framework has been proposed to derive short chemical mechanisms with only the necessary kinetics for the desired surrogate mixture. Figure shows the chemical model developed in our earlier works reorganized into this framework. A script to extract a chemical mechanism for a surrogate mixture, the kinetics of whose individual components are described in this parent chemical mechanism, is available under the tab <i> publications</i> </p> 
 </td>
 </tr>
 
@@ -662,9 +678,7 @@ While methylbutanoate is a saturated ester, the real biodiesel also contains a s
 	<ul><li>	
 <h3>Kinetics of conventional fuel surrogate components: </h3> 
 
-.
-.
-.
+Coming up soon ...
 	
 </li>
 </ul>
@@ -681,9 +695,8 @@ While methylbutanoate is a saturated ester, the real biodiesel also contains a s
 <tr>
 <td>
 	<ul><li>	
-.
-.
-.
+Coming up soon ...
+
 
 </li>
 </ul>
