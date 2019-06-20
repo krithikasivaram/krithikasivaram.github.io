@@ -166,6 +166,51 @@ div.tab button.active {
     display: table;
 }
 
+
+/* Appear when hovering over link */
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 400px;
+  background-color: black;
+  color: LightGoldenRodYellow;
+  text-align: left;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  
+  top: 100%;
+  left: 50%; 
+  margin-left: -200px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
 </style>
 	
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -253,6 +298,10 @@ p.small {
   font-size: 30pt;
   font-variant: small-caps;
   color: orange;
+}
+p.card {
+  font-size: 13pt;
+  color: pink;
 }
 </style>
 
@@ -410,58 +459,13 @@ Our research work falls under the broad headers listed below:
 
 <!--</br> </br> <i>If you are interested in being a part of our team, peruse the list of <a href="#" onclick="openCity(event, 'Available_Projects')"> available projects</a> to identify your interests and write to me with a subject line that includes the title of the topic. Please note that I am *not* interested in hiring interns.</i> -->
 
-<!--<td width="25%">
+<td width="25%">
 	<center><img src="./images/krithika.png" width="170">	</center> </br> </br>
 </td>
--->
 </tr>
 </table>
 
 <table border="1" cellspacing="1" cellpadding="5" width="100%">
-
-<!--
-	<tr>
-<td>
-	<center><h3>Development of kinetic models</h3></center>
- <div class="row">
-	<a href="#kinetics_small_oxygenates">
-  <div class="column">
-	<center><h3>Small oxygenates</h3></a> </center>
-		<figure>
-    <img src="./research_highlights/SL_mma.jpg"  style="width: 100%;"/>
-	<figcaption> Fig: Flame speeds of methylmethacrylate </figcaption>
-	</figure>
-  </div>
- 
-  <div class="column">
-	<figure>
-      <img src="./research_highlights/23spec_14step_results_Figd.png"  style="width: 100%;"> 
-<figcaption> Fig: Extinction strain rates of dimethyl-ether </figcaption>
-</figure>
-  </div>
-    <div class="column">
-  	  <center><a href="#kinetics_alternative"><h3>Biodiesel surrogates</h3> </center>
-  	  <figure>
-      <img src="./research_highlights/mb_rcm_CNF_Figa.jpg"  style="width: 100%;"/></a>
-  	<figcaption> Fig: Ignition delays of methylbutanoate </figcaption>
-  	</figure>
-    </div>
- 
-    <div class="column">
-  	  <a href="#kinetics_conventional"><h3>Conventional fuel surrogates</h3>
-  	  <figure>
-        <img src="./research_highlights/tig_phi1_jetSurrogate_P20.png"  style="width: 100%;"> </a>
-  <figcaption> Fig: Ignition delays of jet fuel surrogate </figcaption>
-  </figure>
-    </div>
-	
-</div>
-	</center>
-	<br>
-</td>
-</tr>
--->
-
 <tr>
 <td>
 	<center>
@@ -587,7 +591,7 @@ Our research work falls under the broad headers listed below:
 	<tr>
 	<td>
 		<ul><li>	
-	<h3>Compact kinetic model for methyl methacrylate oxidation:</h3> 
+	<h3 id="kinetics_small_oxygenates_mma">Compact kinetic model for methyl methacrylate oxidation:</h3> 
 			<!--Study of kinetics of methylmethacrylate, which is a monomer of PMMA that is used in construction sector, is relevant to fire research. A compact reaction model to describe its oxidation is being developed and validated against fundamental experimental datasets obtained in canonical configurations, which isolate the kinetics from the flow related complexities.-->
 			In these days, synthetic and natural polymeric esters find applications in transport and construction sectors, where fire safety is an important concern. One polymer that is wide used is poly methyl methacrylate (PMMA), which almost completely undergoes thermal decomposition into methyl methacrylate (its monomer) CH<sub>2</sub>=C(CH<sub>3</sub>)-C(=O)-O-CH<sub>3</sub> (MMA) at ~250-300<sup>o</sup>C. In order to analyze the high temperature gas phase oxidation of PMMA, and thereby predict its fire behaviour (such as burning rate, temperature of the material and heat fluxes) with less computational effort, a compact kinetic model for the oxidation of its primary decomposition product, MMA, is most essential.  </br> </br>
 		
@@ -608,7 +612,7 @@ Our research work falls under the broad headers listed below:
 	<tr>
 		<td>
 		<ul> <li>
-	<h3>Extinction studies of oxygenated fuels:</h3>
+	<h3 id="kinetics_small_oxygenates_dme">Extinction studies of oxygenated fuels:</h3>
 	 <center><img src="./current_research/oxygenates_rohit/diesel_blend_oxygenate.jpg"  style="float: right; width: 30%; margin-left: 2%; margin-bottom: 0.5em;"> </center> 
 	Addition to oxygenates to diesel fuel has been found to reduce soot emissions. Nonetheless, the resulting changes in the extinction and auto-ignition characteristics of the fuel mixture have not yet been fully understood. Considering two important oxygenates, dimethyl ether and methanol, we undertook a fundamental analysis, which reveals that blending small amounts of oxygenates with diesel increases its resistance to extinction, which can be of use in applications such as burners, furnaces and pre-vaporizers. We also find that the auto-ignition characteristics are not altered much due to blending. This study suggests that in the presence of oxygenate, a combustion system can be made more stable even at higher strain rates and at the same time operate with reduced emissions. 
 	</br> </br>
@@ -658,7 +662,7 @@ One of our recent interests concerns with developing a kinetic scheme for a smal
 <!-- One of our recent interests concerns with developing a kinetic scheme for a small ester, which is a potentially important candidate to represent the longer chain molecules in the real biodiesel fuel, namely methylbutanoate. A compact reaction scheme is derived for methylbutanoate from an existing detailed mechanism, revised based on newer experimental measurements and theoretical rate constant calculations, and comprehensively assessed for its component kinetic description.  The revised kinetic model has been validated comprehensively against a wide range of experimental data along with ignition delays at intermediate temperatures measured in an RCM at PTB, Germany. The effect of addition of low-temperature chemistry pathways to the methyl butanoate chemical kinetic mechanism has also been explored. A surrogate has been defined using a novel approach to represent a target biodiesel fuel. This surrogate has been employed in engine simulations and comparisons have been made for major combustion characteristics obtained using computations and experiments performed using a biodiesel powered CI engine. -->
 </br>
 
-While methylbutanoate is a saturated ester, the real biodiesel also contains a significant degree of unsaturation (depending on the source of the oil), which results in considerable differences in combustion characteristics, such as in ignition delay times. In this work, the importance of including an unsaturated molecule in the bioidiesel surrogate will be investigated. <br><br>	
+While methylbutanoate is a saturated ester, the real biodiesel also contains a significant degree of unsaturation (depending on the source of the oil), which results in considerable differences in combustion characteristics, such as in ignition delay times. In this work, the importance of including an unsaturated molecule in the biodiesel surrogate will be investigated. <br><br>	
 	A kinetic scheme is being developed for methyl crotonoate, which is a simple unsaturated ester, that is representative of the long chain unsaturated esters in the real biodiesel. To validate the kinetic model, experimental data at intermediate temperatures for ignition delays measured in an RCM and species profiles in a JSR will be utilized, in addition to the experimental data available at high temperatures. Besides ascertaining the importance of including an unsaturated ester constituent in biodiesel surrogates, the reaction scheme proposed and the rate constants used therein will act as a basis to build reaction mechanisms for longer chain unsaturated esters, which are less understood presently. 
 	
 	<h4>Contributors: <a href="#people-aditya" onclick="openCity(event, 'People')"> Aditya D. Lele</a>, <a href="#people-praise" onclick="openCity(event, 'People')"> Praise Noah Johnson</a></h4> 
@@ -819,6 +823,7 @@ Ignition delay has an important role in combustion. Ignition delay is affected b
 </table>
 
 
+
 <table border="1" cellspacing="1" cellpadding="5" width="100%">
 <tr>
 <td>
@@ -842,85 +847,174 @@ Ignition delay has an important role in combustion. Ignition delay is affected b
 <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
 <div id="People" class="tabcontent">
 	<center><img src="./images/logo.png" width="800">
-
-<table border="1" cellspacing="1" cellpadding="5" width="100%">
-	<h2>Current students</h2>
+<!--<style>
+	img {
+  border-radius: 50%;
+}
+</style>
+-->
+		
+<br><br>
+<table border="1" cellspacing="1" cellpadding="5" width="100%"> <tr><td>
+	
+<table border="0" cellspacing="1" cellpadding="5" width="100%">
+	<center><p class=small>Research Scholars</p></center>
 
 <tr>
+	<td width="25%" id="people-dummy"></td>
 	<td width="25%" id="people-krunal">
-	<center><img src="./images/Krunal.jpg" width="150">	
-	</br>
-	<h4>Krunal Rajeshkumar Panchal<br>
-	PhD scholar </h4>
-	<!--B. Tech in Mechanical Engineering from Vishwakarma Institute of Technology, Pune</br>-->
-</center>
-Krunal obtained his B.E. in Mechanical Engineering from Government Engineering College, Modasa, Gujarat in 2016. Thereafter, he obtained his M. Tech in Mechanical Engineering from Nirma Unirversity, Ahmedabad, Gujarat in 2018. His research topic focuses on optimization methods in combustion kinetics.
-	<!--<table border="1" cellspacing="1" cellpadding="5" width="150%"> -->
-<br><br> View research  <a href="#mech_opt" onclick="openCity(event, 'Current_Research')"> here </a>
-
-</ul>
-</td>
-
-<td width="25%" id="people-shan">
-	<center><img src="./images/Shanmugasundaram.jpg" width="150">	
-	</br>
-	<h4> Shanmugasundaram D<br>
-	 PhD scholar </h4>
-	<!--B. Tech in Mechanical Engineering from Vishwakarma Institute of Technology, Pune</br>-->
-</center>
-Shanmugasundaram obtained his B. Tech and M. Tech in Mechanical Engineering from Pondicherry Engineering College, Puduchery in 2014 and 2016 respectively. His project revolves around chemical kinetic modeling and reactive simulations of fuels relevant to fire research, one among them being methylmethacrylate. His thesis is co-advised by Dr. V. Raghavan at IIT Madras. 
-
-<br><br>
-View research  <a href="#kinetics_small_oxygenates" onclick="openCity(event, 'Current_Research')"> here </a>
-	<!--<table border="1" cellspacing="1" cellpadding="5" width="150%"> -->
-</td>
+	<center>
+			 <div class="tooltip">	<img src="./images/Krunal.jpg" width="150">	
+				 <h4>Krunal Rajeshkumar Panchal<br>
+					 PhD scholar, <a href="#mech_opt" onclick="openCity(event, 'Current_Research')">Research</a></h4>
+					 <span class="tooltiptext">
+						 <p class=card><i>Background:</i> <br>
+							 B.E. in Mechanical Engineering from Government Engineering College, Modasa, Gujarat (2016)<br>
+						 M. Tech in Mechanical Engineering from Nirma University, Ahmedabad, Gujarat (2018)</p> 
+		 				 <p class=card><i>Research interests:</i> Optimization methods in combustion kinetics</p>
+<!--						 Krunal obtained his B.E. in Mechanical Engineering from Government Engineering College, Modasa, Gujarat in 2016. Thereafter, he obtained his M. Tech in Mechanical Engineering from Nirma Unirversity, Ahmedabad, Gujarat in 2018. His research topic focuses on optimization methods in combustion kinetics. -->
+						 </span>
+				 </div>
+	 </center>
+	</td>
+<td width="25%" id="people-shan">	
+	<center>
+	 <div class="tooltip">	<img  
+ src="./images/Shanmugasundaram.jpg" width="160">	
+  		 <h4> Shanmugasundaram D<br>
+			 PhD scholar,  <a href="#kinetics_small_oxygenates_mma" onclick="openCity(event, 'Current_Research')">Research</a>	
+		  </h4>
+		  <span class="tooltiptext">
+			  <p class=card><i>Background:</i> B. Tech and M. Tech in Mechanical Engineering from Pondicherry Engineering College, Puduchery (2014,2016)</p> 
+			  				 <p class=card><i>Research interests:</i> Chemical kinetic modeling and reactive simulations of fuels relevant to fire research</p>
+			  				 <p class=card><i>Co-advisor:</i> Prof. V. Raghavan, IIT Madras</p>
+<!--			  Shanmugasundaram obtained his B. Tech and M. Tech in Mechanical Engineering from Pondicherry Engineering College, Puduchery in 2014 and 2016 respectively. His project revolves around chemical kinetic modeling and reactive simulations of fuels relevant to fire research, one among them being methylmethacrylate. His thesis is co-advised by Dr. V. Raghavan at IIT Madras. -->
+			</span>
+	 </div>
+	 </center>
+  </td>
+	<td width="25%" id="people-dummy"></td>
 </tr>
 </table>
-
-<table border="1" cellspacing="1" cellpadding="5" width="100%">
+<table border="0" cellspacing="1" cellpadding="5" width="100%">
 <tr>
-	<td width="25%" id="people-kedar">
-	<center><img src="./images/Kedar.jpg" width="150">	
-	</br>
-	<h4>Page Kedar Govind<br>
- MS scholar </h4>
-	<!--B. Tech in Mechanical Engineering from Vishwakarma Institute of Technology, Pune</br>-->
-</center>
-Kedar obtained his B.E. in Mechanical Engineering from PVG's College of Engineering and Technology, Pune  in 2017. His research topic focuses on developing open source tools to generate compact kinetic models.
-</p> View research  <a href="#misc" onclick="openCity(event, 'Current_Research')"> here </a>
-</td>
-
+	<td width="12.5%" id="people-dummy"></td>
+<td width="25%" id="people-kedar">	
+	<center>
+	 <div class="tooltip">	<img src="./images/Kedar.jpg" width="150">	
+			<h4>Page Kedar Govind<br>
+		 MS scholar, <a href="#misc" onclick="openCity(event, 'Current_Research')">Research</a> </h4>
+			 <span class="tooltiptext"><p class=card><i>Background:</i> B.E. in Mechanical Engineering from PVG's College of Engineering and Technology, Pune (2017)</p> 
+				 <p class=card><i>Research interests:</i> Developing open source tools to generate compact kinetic models</p>
+				 <!-- Kedar obtained his B.E. in Mechanical Engineering from PVG's College of Engineering and Technology, Pune  in 2017. His research topic focuses on developing open source tools to generate compact kinetic models. -->
+			 </span>
+	 </div>
+	 </center>
+  </td>	  
+	
 	<td width="25%" id="people-pragnesh">
-	<center><img src="./images/Pragnesh.jpg" width="150">	
-	</br>
-	<h4>Pragnesh Rajubhai Rana<br>
-	 MS scholar </h4>
-	<!--B. Tech in Mechanical Engineering from Vishwakarma Institute of Technology, Pune</br>-->
-</center>
-Pragnesh obtained his B.E. in Mechanical Engineering from Gujarat Technological University in 2016. His research topic focuses on simulation of droplet combustion with accurate chemical kinetics. His thesis is co-advised by Dr. Sivaram Ambikasaran at IIT Madras.
-</p>
-	<!--<table border="1" cellspacing="1" cellpadding="5" width="150%"> -->
-</ul>
-View research  <a href="#misc" onclick="openCity(event, 'Current_Research')"> here </a>
-</td>
-
-<td width="25%" id="people-praise">
-	<center><img src="./images/Praise_Noah_Johnston.jpg" width="150">	
-	</br>
-	<h4>Praise Noah Johnson<br>
-  MS scholar </h4>
-</center>
-Praise obtained his B.E in Mechanical Engineering from Maharaja Engineering College, Coimbatore in 2017. His research work centers on kinetics of unsaturated ester content in biodiesel fuel. 
-</p>
-	<!--<table border="1" cellspacing="1" cellpadding="5" width="150%"> -->
-View research  <a href="#kinetics_alternative" onclick="openCity(event, 'Current_Research')"> here </a>
-</td>
-
+  	<center>
+  	 <div class="tooltip">	<img src="./images/Pragnesh.jpg" width="160">	
+  			<h4>Pragnesh Rajubhai Rana<br>
+  		 MS scholar, <a href="#misc" onclick="openCity(event, 'Current_Research')">Research</a> </h4>
+  			 <span class="tooltiptext"><p class=card><i>Background:</i> B.E. in Mechanical Engineering from Gujarat Technological University (2016)</p> 
+				 <p class=card><i>Research interests:</i> Data-driven prediction of ignition delays</p>
+				 <p class=card><i>Co-advisor:</i> <a href="https://sivaramambikasaran.com">Dr. Sivaram Ambikasaran</a>, IIT Madras</p>
+				 <!-- Pragnesh obtained his B.E. in Mechanical Engineering from Gujarat Technological University in 2016. His research topic focuses on simulation of droplet combustion with accurate chemical kinetics. His thesis is co-advised by Dr. Sivaram Ambikasaran at IIT Madras. -->
+			 </span> 
+	 </div>
+  			 </center>
+    </td>
+	
+	<td width="25%" id="people-praise">
+  	<center>
+  	 <div class="tooltip">	<img src="./images/Praise_Noah_Johnston.jpg" width="150">	
+  			<h4>Praise Noah Johnson<br>
+  		 MS scholar, <a href="#kinetics_alternative" onclick="openCity(event, 'Current_Research')">Research</a> </h4>
+  			 <span class="tooltiptext"><p class=card><i>Background:</i> B.E in Mechanical Engineering from Maharaja Engineering College, Coimbatore (2017)</p> 						 <p class=card><i>Research interests:</i> Kinetics of unsaturated ester content in biodiesel fuel</p>
+				 <!--Praise obtained his B.E in Mechanical Engineering from Maharaja Engineering College, Coimbatore in 2017. His research work centers on kinetics of unsaturated ester content in biodiesel fuel.-->
+			  </span>
+	 </div>
+  			 </center>
+    </td>
+	<td width="12.5%" id="people-dummy"></td>
 </tr>
 </table>
 
 <br><br>
-<h2>Alumni</h2>
+<br><br>
+	<center><p class=small>Alumni</p></center>
+<table border="0" cellspacing="1" cellpadding="5" width="100%">
+<tr>
+	<td width="25%" id="people-dummy"></td>
+	<td width="25%" id="people-aditya">
+	<center>
+			 <div class="tooltip">	<img src="./images/Aditya_Lele.JPG" width="150">	
+<h4><a href="https://adityadlele.github.io" target="_blank">Aditya Dilip Lele</a> <br>
+					 MS 2016--18, <a href="#kinetics_alternative" onclick="openCity(event, 'Current_Research')">Research</a></h4>
+					 <span class="tooltiptext"><p class=card><i>Thesis:</i> Development of a skeletal chemical kinetic mechanism for a biodiesel surrogate and its application in CI engine simulations</p> 
+						 <p class=card><i>Co-advisor:</i> Dr. K. Anand, IIT Madras.</p>
+						 <p class=card><i>Currently:</i> PhD scholar, Penn State.</p>
+</span>
+				 </div>
+	 </center>
+	</td>
+<td width="25%" id="people-rohit">	
+	<center>
+	 <div class="tooltip">	<img  
+ src="./images/Rohit_Khare.jpg" width="170">	
+<h4><a href="https://rohitsanjaykhare.github.io" target="_blank">Rohit Sanjay Khare</a><br>
+			 MS 2016--18,  <a href="#kinetics_small_oxygenates_dme" onclick="openCity(event, 'Current_Research')">Research</a>	</h4>
+		  </h4>
+		  <span class="tooltiptext"><p class=card><i>Thesis:</i> A comprehensively validated compact mechanism for dimethyl ether oxidation: an experimental and computational study</p> 
+						 <p class=card><i>Co-advisor:</i> Prof. V. Raghavan, IIT Madras.</p>
+						 <p class=card><i>Currently:</i> PhD scholar, Combustion Technology department, Karlsruhe Institute of Technology</p>
+			  			  <!--Rohit obtained his B. Tech in Mechanical Engineering from Vishwakarma Institute of Technology, Pune in 2015. He received his Masters at IIT Madras in 2018, for his work on fundamental experimental and computational studies of extinction strain rates of oxygenated fuels and their blends with conventional fuels. His thesis was co-advised by Dr. V. Raghavan at IIT Madras. He is currently pursing his PhD in the Combustion Technology department at Karlsruhe Institute of Technology.</p>-->
+</span>
+	 </div>
+	 </center>
+  </td>
+	<td width="25%" id="people-dummy"></td>
+</tr>
+</table>
+
+<table border="0" cellspacing="1" cellpadding="5" width="100%">
+<tr>
+	<td width="25%" id="people-dummy"></td>
+	<td width="25%" id="people-sanjay">
+	<center>
+			 <div class="tooltip">	<img src="./images/Sanjay.jpg" width="150">	
+<h4><a href="https://www.linkedin.com/in/vaisakh-t-v-4a3505112" target="_blank">M. C. Sanjay</a><br>
+					 M. Tech 2015--17, <a href="#misc" onclick="openCity(event, 'Current_Research')">Research</a></h4>
+					 <span class="tooltiptext">
+						 <p class=card><i>Project:</i> SMILES based interface to Thermodynamic Property Estimation Using THERM </p> 
+						 						 <p class=card><i>Currently:</i> Scientific officer, Nuclear Power Corporation of India Limited (NPCIL)</p>
+						 <!--Sanjay obtained his B. Tech in Mechanical Engineering from NIT Calicut in 2015. He received his M. Tech in Thermal Engineering at IIT Madras in 2017. His project focused on thermodynamic property estimation. He is currently working as a scientific officer at the Nuclear Power Corporation of India Limited (NPCIL).</p>-->
+</span>
+				 </div>
+	 </center>
+	</td>
+<td width="25%" id="people-vaisakh">	
+	<center>
+	 <div class="tooltip">	<img  
+ src="./images/Vaisakh.png" width="150">	
+<h4><a href="https://www.linkedin.com/in/vaisakh-t-v-4a3505112" target="_blank">Vaisakh Vasudevan</a><br>
+			 M. Tech 2015--17,  <a href="#mech_opt" onclick="openCity(event, 'Current_Research')">Research</a></h4>
+		  <span class="tooltiptext">
+			 <p class=card><i>Project:</i> Development of a framework for optimization of reaction nmechanisms and its application to n-heptane </p> 
+			 						 <p class=card><i>Currently:</i> Postgraduate engineer, <a href="https://www.linkedin.com/company/lennox_india_technology_centre?trk=ppro_cprof" target="_blank">Lennox India Technology Centre</a>, Chennai</p>
+			  <!--Vaisakh obtained his B. Tech in Mechanical Engineering from NSS College of Engineering Palakkad in 2014. He received his M. Tech in Thermal Engineering at IIT Madras in 2017. His project focused on reaction mechanism optimization. He is currently working as a postgraduate engineer at <a href="https://www.linkedin.com/company/lennox_india_technology_centre?trk=ppro_cprof" target="_blank">Lennox India Technology Centre</a>, Chennai.</p> -->
+</span>
+	 </div>
+	 </center>
+  </td>
+	<td width="25%" id="people-dummy"></td>
+</tr>
+</table>
+
+</td></tr></table>
+
+<!--
 <table border="1" cellspacing="1" cellpadding="5" width="100%">
 <tr>
 <td width="25%" id="people-aditya">
@@ -928,9 +1022,7 @@ View research  <a href="#kinetics_alternative" onclick="openCity(event, 'Current
 </br>
 <h4><a href="https://adityadlele.github.io" target="_blank">Aditya Dilip Lele</a> <br></h4>
 	</center>
-<!--B. Tech in Mechanical Engineering from Vishwakarma Institute of Technology, Pune</br>-->
 Aditya obtained his B. Tech in Mechanical Engineering from Vishwakarma Institute of Technology, Pune in 2015. He received his Masters at IIT Madras in 2018, for his work on kinetic modeling of biodiesel surrogates and reacting flow simulations in CI engines. His thesis was co-advised by Dr. K. Anand at IIT Madras. He is currently pursuing his PhD at Penn State.</p>
-<!--<table border="1" cellspacing="1" cellpadding="5" width="150%"> -->
 
 View research  <a href="#kinetics_alternative" onclick="openCity(event, 'Current_Research')"> here </a>
 </td>
@@ -939,23 +1031,20 @@ View research  <a href="#kinetics_alternative" onclick="openCity(event, 'Current
 <center><img src="./images/Rohit_Khare.jpg" width="170">	
 </br>
 <h4><a href="https://rohitsanjaykhare.github.io" target="_blank">Rohit Sanjay Khare</a><br></h4>
-<!--B. Tech in Mechanical Engineering from Vishwakarma Institute of Technology, Pune</br>-->
 </center>
 Rohit obtained his B. Tech in Mechanical Engineering from Vishwakarma Institute of Technology, Pune in 2015. He received his Masters at IIT Madras in 2018, for his work on fundamental experimental and computational studies of extinction strain rates of oxygenated fuels and their blends with conventional fuels. His thesis was co-advised by Dr. V. Raghavan at IIT Madras. He is currently pursing his PhD in the Combustion Technology department at Karlsruhe Institute of Technology.</p>
-<!--<table border="1" cellspacing="1" cellpadding="5" width="150%"> -->
 View research  <a href="#kinetics_small_oxygenates" onclick="openCity(event, 'Current_Research')"> here </a>
 </td>
 </tr>
+
 
 <tr>
 <td width="25%" id="people-sanjay">
 <center><img src="./images/Sanjay.jpg" width="170">	
 </br>
 <h4><a href="https://www.linkedin.com/in/vaisakh-t-v-4a3505112" target="_blank">M. C. Sanjay</a><br></h4>
-<!--B. Tech in Mechanical Engineering from Vishwakarma Institute of Technology, Pune</br>-->
 </center>
 <p>Sanjay obtained his B. Tech in Mechanical Engineering from NIT Calicut in 2015. He received his M. Tech in Thermal Engineering at IIT Madras in 2017. His project focused on thermodynamic property estimation. He is currently working as a scientific officer at the Nuclear Power Corporation of India Limited (NPCIL).</p>
-<!--<table border="1" cellspacing="1" cellpadding="5" width="150%"> -->
 View research  <a href="#misc" onclick="openCity(event, 'Current_Research')"> here </a>
 </td>
 
@@ -964,13 +1053,11 @@ View research  <a href="#misc" onclick="openCity(event, 'Current_Research')"> he
 <center><img src="./images/Vaisakh.jpg" width="170">	
 </br>
 <h4><a href="https://www.linkedin.com/in/vaisakh-t-v-4a3505112" target="_blank">Vaisakh Vasudevan</a><br></h4>
-<!--B. Tech in Mechanical Engineering from Vishwakarma Institute of Technology, Pune</br>-->
 </center>
 Vaisakh obtained his B. Tech in Mechanical Engineering from NSS College of Engineering Palakkad in 2014. He received his M. Tech in Thermal Engineering at IIT Madras in 2017. His project focused on reaction mechanism optimization. He is currently working as a postgraduate engineer at <a href="https://www.linkedin.com/company/lennox_india_technology_centre?trk=ppro_cprof" target="_blank">Lennox India Technology Centre</a>, Chennai.</p>
-<!--<table border="1" cellspacing="1" cellpadding="5" width="150%"> -->
 View research  <a href="#mech_opt" onclick="openCity(event, 'Current_Research')"> here </a>
 </td>
-
+-->
 
 </tr>
 </table>
