@@ -303,6 +303,11 @@ p.card {
   font-size: 13pt;
   color: pink;
 }
+p.smallcard {
+  font-size: 20pt;
+  font-variant: small-caps;
+  color: orange;
+}
 </style>
 
 <!-- <script type="text/javascript"> 
@@ -378,7 +383,7 @@ I am currently working with <a href="http://pepiot.mae.cornell.edu" target="_bla
 <table border="1" cellspacing="2" cellpadding="5" width="100%">
 <tr>
 	<td width="100%">
-<center><h2>Position open for a project assistant to study the <br><a href=project_writeup/Importance_of_kinetics_in_realistic_simulations.html><i>Importance of kinetics in realistic simulations</i></a> </h2> </center>
+<center><h3>***Position open for a project assistant to study the <br><a href=project_writeup/Importance_of_kinetics_in_realistic_simulations.html><i>Importance of kinetics in realistic simulations</i></a>***</h3> </center>
 <!-- <center><h2> <a href="#" onclick="openCity(event, 'Available_Projects')"><i>Possible M. Tech/DD projects 2019</i></center></a></h2> -->
 </tr>
 </table>
@@ -1416,30 +1421,48 @@ All mechanism are made available and have been validated as discussed in the jou
 <td>
 
 <!-- <a id="Available_research_projects"> Write-up coming soon ... </a> -->
-For a Masters thesis*
+<center><p class=smallcard>For a Masters thesis*</p></center>
 <ul>
-	<li> <a href="project_writeup/Alternative_Fuel_Combustion.html" target="_blank"> Alternative Fuel Combustion </a>
+	<li> <h3>Alternative Fuel Combustion</h3></li>
+		Renewable and alternative fuels for aviation have advantages of lesser emissions and clean burning ability. Identifying such a suitable surrogate mixture to represent such fuels and arriving at a kinetic scheme to predict the fuel's combustion behavior from a fundamental approach are the objectives of this work. This opens up avenues to study several `drop-in alternatives' to current day aviation fuels. As a part of this work, an approach automatically integrate kinetics of new fuels into existing reaction mechanisms will be explored.		
 	<!-- Development of kinetic model for Fischer-Tropsch fuels -->
 	<!-- <li> <a href="project_writeup/Biodiesel_Combustion.html" target="_blank"> Biodiesel Combustion </a> -->
 	<!--Analysis of the importance of unsaturated ester representatives in biodiesel surrogates -->
 	<!-- <li> <a href="project_writeup/Optimization_in_Combustion.html" target="_blank"> Optimization in Combustion </a> --> 
 	<!-- Mechanism optimization framework -->
 	<!--<li> <a href="project_writeup/Reduced_Reaction_Models_For_Combustion.html" target="_blank"> Methods for mechanism reduction </a> -->
-	<li> Bottom-up approach to kinetic modeling of larger hydrocarbons
-	<li> Development of structure based compact reaction models
+	<li> <h3>Bottom-up approach to kinetic modeling of larger hydrocarbons</h3></li>
+		A bottom-up approach to compact model development has been put forth in one of <a href="publ-dme1">our recent works</a> to successfully develop a 23 species model for dimethylether. How can this be extended to higher hydrocarbons? A major challenge in adopting this methodology for higher hydrocarbons is the development of the fuel specific sub-mechanism. To begin with, the student will use the approach to develop the kinetics of a small molecule and thereafter investigate how to extend the approach. 
+	<li> <h3>Development of structure based compact reaction models</h3></li>
+		
 	<!-- <li> Development of canonical kinetics solvers and post-processing tools (1 year: M. Tech project) -->
-	<li> Simulation driven surrogate formulation
+	<!-- <li> Simulation driven surrogate formulation -->
 <!--	<li> <a href="project_writeup/Surrogate_Spherosymmetric_Droplet_Vaporization.html" target="_blank">Surrogate for liquid-phase applications</a> -->
 </ul>
 </td>
 </tr>
 
 <tr><td>
-For an M. Tech project*
+<center>	<p class=smallcard>For an M.Tech project*</p> </center>
 <ul>
-	<li> Automatic reaction mechanism generation</li>
-	<li> Thermodynamic property estimation for cyclic species</li>
-	<li> <a href="project_writeup/Importance_of_kinetics_in_realistic_simulations.html" target="_blank"> Evaluating the effect of accuracy of kinetic models in realistic simulations</li>
+	<li> <h3>Automatic reaction mechanism generation</h3></li>
+	The primary objective is to develop stand alone code to generate mechanisms for any hydrocarbon fuel. This has been done earlier -- but the challenge is building one on our own and how can we do better than the existing ones. <br><br>
+
+	<li> <h3>Thermodynamic property estimation for cyclic species</h3></li>
+	Estimating thermodynamic property for cyclic species by analyzing a database of known properties. One of our earlier stand-alone codes on estimating thermochemical properties will be extended to consider cyclic alkanes. Check this out under the <i>publications (open source codes) </i> tab. <br><br>
+	
+	<li> <h3>Evaluating the effect of accuracy of kinetic models in realistic simulations</h3></li>		
+		Reaction mechanisms that describe the oxidation of a fuel are huge with several thousands of individual steps. While using them in computations, compact representation of these schemes are essential. Do the reduced mechanism when run through complex calculations yield accurate results? To what degree? This will be prime focus of this project. 		 <br><br>
+		
+	<li><h3> Simulation driven surrogate formulation </h3> </li>
+	Can simulations be used to define surrogates (representative mixtures) for real fuels? We have made some progress on this along with a preliminary code development exercise. How can this be made more flexible and meaningful is the challenge.	
+	
+	<li><h3> Solver for homogeneous reactors and analysis tools </h3> </li>
+	Homogenous reactor configurations are often used to validate kinetic models. The objective is to develop a stand alone in-house solver for simulating these configurations. As the second part of the work, the aim is to develop a GUI based interface to path flux analysis (through which routes does the reaction system evolve the most) commonly used in kinetic model development.
+	
+	<li><h3> Kinetics of iso-alkanes </h3> </li>
+	Can the effect of cycloakane representative in real fuel surrogates be imitated by iso-alkanes? The aim is to investigate the common branched alkanes, iso-octane and iso-cetane and explore their role as real fuel surrogates in place of cycloalkanes. As a first task, reaction scheme for iso-alkanes have to be arrived at and integrated with an existing master kinetic model. Getting grips with kinetic model development is an important part of this project.
+	
 </ul>
 
 </td>
