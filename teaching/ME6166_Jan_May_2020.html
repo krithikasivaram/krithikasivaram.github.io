@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html>
+
+<title>ME6166: Combustion Technology</title>
+<head>
+<style type="text/css">
+body{color:white}
+body{font-family:"Palatino"}
+body{font-size: 1.1em;}
+body {margin: 1em; } 
+A:link{color:yellow}
+A:visited{color:yellow}
+A:hover{color:red}
+A:hover{color:red}
+h2  {color: white;}
+h3  {color: lightpink;}
+}
+table, th, td {
+    border: 1px solid white;
+}
+h1{
+    margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 4px;
+}
+h2{
+  margin-top: 4px;
+  margin-bottom: 4px;
+  margin-left: 4px;
+ 
+}
+h3{
+    margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 14pt;
+  margin-left: 4px;
+}
+h4{
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 12pt;
+  margin-left: 4px;
+}
+h5{
+  color: lightyellow;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  font-size: 14pt;
+  margin-left: 4px;
+}
+p
+{
+  margin:0;
+  padding:0;
+}
+</style>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-62002830-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<style>
+.collapsible {
+  background-color: gray;
+  cursor: pointer;
+  padding: 2px;
+  width: text-width;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 14pt;
+  font-family:"Palatino";
+}
+
+.active, .collapsible:hover {
+  background-color: slategray;
+}
+
+.content {
+  padding: 0 0px;
+  display: none;
+  overflow: hidden;
+  background-color: black;
+}
+</style>
+    
+</head>
+
+<body bgcolor = "black">
+	
+
+<table border="0" cellspacing="1" cellpadding="1"  width="100%">
+<tr> <td><center> <h2> ME6166: Combustion Technology </h2></td>
+<tr> <td><center> <h2> Jan-May 2020</h2> </center></td> </tr>
+</table> 
+
+  <center><a href="./Flyer_Jan_May_2020.jpg" target="_blank">View course flyer</a></center><br>
+
+<center> 
+	<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSflmazMV061cQovIJfcNHLWq14tHeoHHTjErjSA3D3FmXrtEw/viewform?embedded=true" width="700" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> 
+	<br>
+	<h2><a href="https://docs.google.com/forms/d/e/1FAIpQLSflmazMV061cQovIJfcNHLWq14tHeoHHTjErjSA3D3FmXrtEw/viewform?usp=sf_link" target="_blank">Click here to answer the questionnaire on a separate page</a></h2>
+</center>
+
+<!-- <center>For a glimpse of the course content, check out the <a href="./ME6166_Jan_May_2019.html" target="_blank">website for the class offered last time</a>.</center><br> -->
+<br>
+<table border="1" cellspacing="1" cellpadding="1"  width="100%">
+<tr> <td width="100%">
+<h3> <font color="pink">
+Updates/Announcements:</font></h3>
+<i> Passcode to access the course materials (if required) is this-course-number_this-year (Ex: ME5107_2019)</i>
+	<ul>
+	<li> 2/3: Tutorial 2 final version, Lecture notes for Module 2 complete
+	<li> 27/2: Tutorial 2 updated
+	<li> 20/2: Computational exercise on non-premixed flames, first version of tutorial 2, video input for demo 2 added
+	<li> 17/2: Lecture notes for Week 4 added
+	</ul>
+	<button class="collapsible"><h4>View older announcements</h4></button>
+	<div class="content">
+	<ul>
+		<li> 12/2: Lecture notes for Week 3 added
+		<li> 7/2: Solution hints added for tutorial 1
+		<li> 6/2: Reading materials added for recent topics
+		<li> 5/2: Tutorial 1 updated, Lecture notes updated
+		<li> 30/1: Tutorial 1 updated, Computational exercise added (see within tutorial/demos/exercises)
+		<li> 24/1: Lecture notes for Week 2, Tutorial 1 (covering until materials dealt with in class), reading material on premixed flames added
+		<li> 20/1: Lecture notes added for Week 1 (will be updated once a week)
+		<li> 20/1: Source pdfs and sections in textbooks added with reading materials. 
+		<li> 17/1: Reading exercise for Module 1 added </h3><br> </li>
+		<li> 3/1: Welcome to ME6166! Our first class is on Jan 13th (Monday): <a href="https://owncloud.iitm.ac.in/index.php/s/oWR8SuyNSaWzamv" target="_blank">Getting started</a> </h3><br> </li>
+	</ul>	
+</div>
+</td></tr>
+</table><br>
+
+<table border="1" cellspacing="1" cellpadding="1"  width="100%">
+<tr> <td width="100%"><h3> Suggested Textbooks: </h3>
+<ul> 
+    <li> Combustion Technology: Essentials of Flames and Burners, by V. Raghavan, Ane/Athena Books, 2016 (VR) </li>
+    <li> Applications of combustion principles to domestic gas burner design, by H. R. N Jones, 1990 (HJ) </li>
+    <li> An introduction to fire dynamics, Douglas Drysdale, 2011 (DD) </li>
+<!--	<li> Combustion and Mass transfer by D. B. Spalding, 1979 (DBS) </li>
+    <li> Combustion Theory by F. A. Williams, ABP, 1985 (FAW) </li> -->
+    <li> Understanding Combustion by H. S. Mukunda, Macmillan India (HSM1) </li>
+    <li> Combustion Physics by C. K. Law (CKL) </li>
+	<li> Theoretical and Numerical Combustion by Thierry Poinsot and Denis Veynante, 2016 (TP)</li>
+	<li> <a href="https://www.itv.rwth-aachen.de/fileadmin/Downloads/Summerschools/SummerSchool.pdf" target="_blank">Ercoftac Summer school, Norbert Perters, 1992 (NP)</a></li>
+	<li> Beér, János Miklós, and Norman A. Chigier. "Combustion aerodynamics." New York (1972). </li>
+	<li> Combustion of liquid sprays, Alan Williams, 1989 (AW)</li>
+	<li> Understanding clean energy and fuels from biomass, H. S. Mukunda (HSM2)</li>
+	<!-- <a href="https://owncloud.iitm.ac.in/index.php/s/q5BbpF31aIEcTjL" target="_blank">Understanding clean energy and fuels from biomass, H. S. Mukunda (HSM2)</a> -->
+</ul>
+</tr>
+</table>
+
+<table border="1" cellspacing="1" cellpadding="1"  width="100%">
+<tr> <td width="100%"><h3> Grading policy: </h3>
+	<ul> <li> Mid-semester exam: 30% <br>
+		<p style="padding-left: 50px;"><font color="lightgreen">Date: March 14th (Saturday), Time: 10 AM--12 PM, Venue: TDCE seminar hall</font></p>
+		<p style="padding-left: 50px;"><font color="lightgreen">Open notes and text books</font></p></li>
+		<!-- <p style="padding-left: 50px;"><a href="https://owncloud.iitm.ac.in/index.php/s/kYst8b9cLpzIgwn" target="_blank">Exam</a>, <a href="https://owncloud.iitm.ac.in/index.php/s/ewnybY9v4VlI2wz">Solutions</a></p> -->
+		 <li> Final exam: 50%</li>
+		<!-- <p style="padding-left: 50px;"><font color="lightgreen">Date: May 3rd (Friday), Time: 9 AM--12 PM, Venue: TDCE seminar hall</font></p>
+		<p style="padding-left: 50px;"><font color="lightgreen">Cheat sheet: Two A4 size sheets (written on both sides) are permitted</font></p>
+		<p style="padding-left: 50px;"><font color="lightgreen">Topics: All materials covered from the beginning of the course till the last day of classes</font></p></li>
+		<p style="padding-left: 50px;"><a href="https://owncloud.iitm.ac.in/index.php/s/AhodnwpsABHiOqK" target="_blank">Exam</a>, <a href="https://owncloud.iitm.ac.in/index.php/s/HiLysdWlUimMQnK">Solutions</a> (to a couple of problems)
+		<p style="padding-left: 50px;"><a href="https://owncloud.iitm.ac.in/index.php/s/O9k9L3nIqznZn7R" target="_blank">Supplementary Exam</a> (selected questions) </li> -->
+		 <li> Demonstration + Computational exercises: 20%. Groups of 2 or 3.</li> 
+		 <!-- <li> Lecture notes: 5% <a href="https://owncloud.iitm.ac.in/index.php/s/bTuzOTYzPEcjqf6" target="_blank">March/April Schedule</a>, <a href="https://owncloud.iitm.ac.in/public.php?service=files&t=8YtY5rA5G4JVuxz" target="_blank">LaTeX Template</a></li> -->
+		 <li> <font color="lightgreen">About a third of the exams will be in line with the tutorial sets</font>
+	</ul>
+
+<button class="collapsible"><h5>View more course info</h5></button>
+<div class="content">
+<table border="1" cellspacing="1" cellpadding="1"  width="100%">
+<tr><td width="50%">
+<h3> Instructors: </h3>
+<ul> <li> Dr. Krithika Narayanaswamy <br>
+# 203, Thermodynamics and Combustion Engineering Lab<br>
+Email: krithika@iitm.ac.in </li><br>
+<li> Dr. S. Varunkumar <br>
+# 206B, Thermodynamics and Combustion Engineering Lab<br>
+Email: varuns@iitm.ac.in </li>
+</ul>
+
+<h3> General information: </h3>
+<ul> <li> 9 credit elective course </li>
+     <li> Open for B. Tech (8th sem), DD (8th, 10th sem), M. Tech, M.S, PhD </li><br>
+     <li> 3 lecture hours per week: G slot <br>
+		 <p><font color="lightgreen">Monday 12-12:50 PM, Thursdays: 10-10:50 AM, Friday: 9-9:50 AM</font></p></li>
+	  <li> Every second Wednesday hour (4:50-5:40 PM) is a tutorial hour, unless stated otherwise </li><br>
+	  <li> <p><font color="lightgreen">Venue: MSB 359</font></p></li>
+</ul>
+</td>
+
+<td width="50%"> 
+	<h3> Learning Outcomes: </h3>
+	<ul> <li> Thorough understanding of combustion phenomenon involved in different applications </li> 
+		 <li> Analysis of combustion devices. </li>
+	</ul>
+	
+	<h3> Pre-requisites: </h3>
+	<ul> <li> ME6060: Fundamentals of Combustion (or) ME5105: Applied thermodynamics </li>
+		 <li> Consent of Teacher is required if no prior coursework on these topics has been done. </li>
+	</ul>
+
+<!--	<h2> Grading policy: </h2>
+	<ul> <li> Mid-semester exam (March 1--4): 30%</li>
+		 <li> Final exam: 45%</li>
+		 <li> Demonstration reports: 20%. Groups of 2 or 3.</li>
+		 <li> Lecture notes: 5% <a href="https://owncloud.iitm.ac.in/public.php?service=files&t=M7omgwNiUEnrgG3" target="_blank">February Schedule</a>, <a href="https://owncloud.iitm.ac.in/public.php?service=files&t=8YtY5rA5G4JVuxz" target="_blank">LaTeX Template</a></li>
+	</ul>
+-->
+    <h3> Questions?</h3>
+	<ul>
+		<li> Instructors' office hours: <br>
+			Friday 3-4 PM, TDCE Seminar hall </li><br>
+		<li> Teaching Assistants: <br>
+		 Shanmugasundaram D.</li>
+	</ul>
+</td>
+</tr>
+</table>
+</div><br>
+</tr>
+</table><br>
+
+
+
+
+<table border="1" cellspacing="1" cellpadding="1"  width="100%">
+<tr> <td width="100%">
+<h3>
+Computing exercises:</h3>
+<ul>
+	<li> Request to download FlameMaster <a href="https://www.itv.rwth-aachen.de/index.php?id=flamemaster" target="_blank">here</a></li>
+	<li> Follow the installation instructions depending on your operating system (TAs can help you with this). Some systems available in TDCE 115 have FlameMaster pre-installed on them. Once again TAs can help you locate them. </li>
+<!--	<li>Check out the example for 1D unstretched premixed flame within the Run directory:
+Path-to-FlameMaster/Run/FlameMan/Prem/Unstretched </li>	
+	<li>Check out the example for counterflow non-premixed flame within the Run directory:
+Path-to-FlameMaster/Run/FlameMan/Diff/Steady/C3H8/, Path-to-FlameMaster/Run/FlameMan/Diff/SteadyPlugFlow/ </li>	
+	<li>Check out the example for generating flamelet solutions within the Run directory:
+Path-to-FlameMaster/Run/FlameMan/Diff/Steady/CH4/ </li>	-->
+</ul>
+</td> </tr>
+</table><br>
+
+<table border="1" cellspacing="1" cellpadding="1"  width="100%">
+<tr> <td width="100%">
+<h3>Schedule for <font color="greenyellow">demonstrations, computational exercises,</font> and <font color="khaki">tutorial discussion sessions</font></h3>
+</table>
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+	<col width = "55%">
+	<col width = "45%">	
+	<tr> <td> <font color="greenyellow">Gaseous fuel burners: LPG stove burner </td>
+	<td> March 12th</td></tr>
+	<tr> <td> <font color="khaki">Non-Premixed flames: Tutorial 2 </td> <td> Mar 4th </td></tr>	
+	<tr> <td> <font color="greenyellow">Non-Premixed flames: <a href="https://owncloud.iitm.ac.in/index.php/s/W9QMwpwb9ASHufk">Computational Exercise</a> </td> <td> Due on Mar 6th </td></tr>
+	<tr> <td> <font color="greenyellow">Non-Premixed flames: Stability, smoke point, extinction; <a href="https://owncloud.iitm.ac.in/index.php/s/VBXum6Nm3kRJTEk" target="_blank">Video for Q1</a> </td> <td> Feb 19th, report due on March 4th </td></tr>
+</table>
+<button class="collapsible"><h4>View previous events</h4></button> 
+ <div class="content">
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+	<col width = "55%">
+	<col width = "45%">	
+	<tr> <td> <font color="greenyellow">Premixed flames: <a href="https://owncloud.iitm.ac.in/index.php/s/VYD5xrxFi5lWpwu">Computational Exercise</a> </td> <td> Due on Feb 20th </td></tr>
+	<tr> <td> <font color="khaki">Premixed flames: Tutorial 1 </td> <td> Feb 5th </td></tr>
+	<tr> <td> <font color="greenyellow">Premixed flames: Flat flame burner </td> <td> Jan 22nd, report due on Feb 6th </td></tr>
+</table>
+</div>
+<!-- 
+	<tr> <td> <font color="greenyellow">Premixed flames: Jet flame <a href="https://owncloud.iitm.ac.in/public.php?service=files&t=2ZU0AJXXICyb2g7" target="_blank">Questionnaire</a>, <a href="https://owncloud.iitm.ac.in/public.php?service=files&t=BaqqHxcjNhr8wvb" target="_blank">Images</a>. Due by February 21st </font></td> 
+	<td> February 7th</td></tr>
+	<tr> <td> <font color="khaki">Premixed flames</font> </td>
+	<td> February 14th</td></tr>
+	<tr> <td> <font color="greenyellow">Non-Premixed flames: Jet diffusion flame, Tsuji burner. <a href="https://owncloud.iitm.ac.in/public.php?service=files&t=0vhINBX2XsSMmOO" target="_blank">Questionnaire</a>, <a href="https://owncloud.iitm.ac.in/public.php?service=files&t=I4Gw1G5Iww4ip3H" target="_blank">Images</a>. Due by March 7th</font></td>
+	<td> February 21st</td></tr>
+	<tr> <td> <font color="khaki">Non-Premixed flames</font> </td>
+	<td> February 28th</td></tr>
+	<tr> <td> <font color="khaki">Droplet vaporization</font></td>
+	<td> March 14th</td></tr>
+	<tr> <td> <font color="greenyellow">Gaseous fuel burners: LPG stove burner, MILD combustor, <a href="https://owncloud.iitm.ac.in/index.php/s/lxA4YcDR2PcucpM">Questionnaire</a>. Due by April 11th</font></td>
+	<td> March 28th</td></tr>
+	<tr> <td> <font color="khaki">Gaseous fuel burners</font></td>
+	<td> April 5th</td></tr>
+</table>
+</div>
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+	<col width = "65%">
+	<col width = "35%">		
+	<tr> <td> <font color="greenyellow">Liquid fuel combustion: injectors</font></td>
+	<td> April 12th</td></tr>
+	<tr> <td> <font color="khaki">Liquid fuel combustion</font></td>
+	<td> April 16th</td></tr>
+	<tr> <td> <font color="greenyellow">Solid fuel combustion: tutorial/demo: Coal gasifier, MILD inspired burner for biomass</font></td>
+	<td> April 26th</td></tr>
+-->
+
+<br><br>
+<table border="1" cellspacing="2" cellpadding="2"  width="100%">
+	<col width = "55%">
+	<col width = "45%">	
+	<tr> <th> <h2> Course outline</h2>
+		 <th> <h2> Reading </h2>
+	</tr> 
+</table><br>
+
+<h3>Module 1: Premixed flames, with bunsen burner as an example: <a href="https://owncloud.iitm.ac.in/index.php/s/5QarvLAi3LHTrcW" target="_blank">Lecture notes</a>, <a href="https://owncloud.iitm.ac.in/index.php/s/AY4yn7czp0PBz2L" target="_blank">Tutorial</a>, <a href="https://owncloud.iitm.ac.in/index.php/s/9nAUk622JONC7ZJ" target="_blank">Hints</a> </h3> <!-- <a href="https://owncloud.iitm.ac.in/public.php?service=files&t=kQeLROs54Biyg0j" target="_blank">Reading Exercise</a>, </h3> -->
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+	<col width = "55%">
+	<col width = "45%">	
+   <tr> 
+	<td> Flame speed, its relation to thermochemistry and kinetics </td>
+	<td> CKL $7.6.1, CKL $7.6.2, <a href="https://owncloud.iitm.ac.in/index.php/s/86eGnautzaiB70Y" target="_blank">Measurement of adiabatic flame speeds</a> </td> </tr>
+	
+	<tr> <td> Dependence of flame speed on various parameters </td>
+	<td> CKL $1.4.6, CKL $7.7, <a href="https://owncloud.iitm.ac.in/index.php/s/6XM3hIIe6AMwZwH" target="_blank">Dependence of reaction rate on p and T (CKL)</a></td></tr>
+	
+	<tr> <td> 1D conservation laws for steady laminar premixed flames  </td>
+	<td> <!-- General derivation: CKL $5.1/TP $2.3, <br> Low Mach number assumption: CKL $5.2.4.3--> </td></tr>
+	
+	<tr> <td> Flame speed calculations using FlameMaster </td>
+	<td> <a href="https://www.researchgate.net/profile/Ellen_Meeks/publication/260388319_PREMIX_a_fortran_program_for_modeling_steady_laminar_one-dimensional_premixed_flames/links/53fe0de20cf23bb019bd249d/PREMIX-a-fortran-program-for-modeling-steady-laminar-one-dimensional-premixed-flames.pdf" target="_blank">Solution procedure: PREMIX</a> </td></tr>
+	
+	<tr> <td> Quenching, ignition energy, and Flammability limits  </td>
+	<td> HSM1 $7.1, $7.2, $8.0 </td></tr>
+	
+	<!-- ><tr> <td>   </td>
+	<td> DD $3.1, $3.3,  CKL $8.5 </td></tr>-->
+	
+	<tr> <td> Flame stretch  </td>
+	<td> CKL $10.3, $10.9.1 </td></tr>
+	
+	<tr> <td> Turbulent premixed flames  </td>
+	<td> Introduction: CKL $11.1, $11.2, $11.3<br>
+		Modeling: TP $5.1.3, $5.3.2, $5.3.3, $5.3.5, $5.3.6<br>
+	 </td></tr>
+</table><br>
+
+<h3>Module 2: Non-premixed flames, with counterflow diffusion flame as an example: <a href="https://owncloud.iitm.ac.in/index.php/s/qBYKDyah6WaAydh" target="_blank">Lecture notes</a>, <a href="https://owncloud.iitm.ac.in/index.php/s/O0luGc4K8QtGrbm" target="_blank">Tutorial</a>, <a href="https://owncloud.iitm.ac.in/index.php/s/aXLB5muCnnupVsW" target="_blank">Hints</a></h3>
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+	<col width = "55%">
+	<col width = "45%">	
+   <tr> 
+	<td> Candle flame, counterflow non-premixed flame </td>
+	<td> TP $3.1, <a href="https://www.sciencedirect.com/science/article/pii/S0082078489801584" target="_blank">Gov Eqns: Opposed flow flame</a> </td> </tr>
+	
+	<tr> <td> Opp-diff flame structure at different strain rates using FlameMaster </td>
+	<td> <a href="https://www.osti.gov/servlets/purl/568983" target="_blank">Solution Procedure: OPPDIFF</a>, Potential flow configuration (provided with FlameMaster manual) </td></tr>
+	
+	<tr> <td> Flamelet equations and concept of scalar dissipation rate  </td>
+	<td> TP $3.2, NP $9.1 </td></tr>
+	
+	<tr> <td> Flame structure problem: Burke Schumann flame using fast chemistry assumption<br>
+	<!--	<p style="padding-left: 205px;">Flame location, flame temperature</p>-->
+	</td> 
+	<td> TP $3.3</td></tr>
+
+	<tr> <td> Mixing problem: Steady strained 1D flame with fast chemistry assumption<br> 
+	<!--	<p style="padding-left: 138px;">Relation of scalar dissipation rate to strain rate</p>  -->
+	</td>
+	<td> TP $3.4.2 </td></tr> 
+	
+	<tr> <td> Ignition, extinction, and S-curve </td>
+	<td> <a href="https://owncloud.iitm.ac.in/public.php?service=files&t=XywzblFfE6ngdvv" target="_blank">Extinction Demo</a>, NP $9.4, NP $9.7 </td></tr>
+	
+	<tr> <td> Turbulent non-premixed flames  </td>
+	<td>  CKL $11.4, TP $6.4.3, TP $6.4.5 </td></tr>
+	
+</table><br>
+
+<h3> Module 3: Burners for gaseous fuels: <!-- <a href="https://owncloud.iitm.ac.in/index.php/s/iI8L4yd0CGPpYeF" target="_blank"> Tutorial </a> --> </h3>
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+	<col width = "55%">
+	<col width = "45%">	
+   <tr> 
+	<td> Flame stability - flash back and blow off </td>
+	<td> <a href="https://owncloud.iitm.ac.in/index.php/s/Wz9PGgYfWCxlE7g" target="_blank">Grad school course notes, Bowman and Mitchell, 2006</a></td> </tr>
+
+   <tr> 
+	<td> Domestic LPG stove burner: stability, design concepts </td>
+	<td> VR $3.1.3, $3.1.4, VR $4.4--$4.6, HJ $3.1--$3.4 </td> </tr>
+	
+	<tr> <td> Stationary gas turbines: Lean premixed combustion </td>
+	<td> <a href="https://oaktrust.library.tamu.edu/handle/1969.1/163372" target="_blank">Lean premixed combustion </td></tr>
+
+	 <!--<tr> <td> MILD combustion: Theory of extinction of well-stirred reactors  </td>
+	<td> <a href="https://www.sciencedirect.com/science/article/pii/S1540748902801432" target="_blank">MILD combustion burner</a>, VR $4.3 -->
+	</td></tr>
+</table><br>
+
+	<h3> Module 4: Spray combustion and applications: <!-- <a href="https://owncloud.iitm.ac.in/index.php/s/7W9G78IN9FQ2YNy" target="_blank"> Tutorial </a> --> </h3>
+<table border="1" cellspacing="2" cellpadding="2" width="100%">
+	<col width = "55%">
+	<col width = "45%">	
+	<tr> <td> Classical Gas Turbine combustors  </td>
+	<td> <!-- DBS $3, $4, $5, $6, $7 --> </td></tr>
+	<tr> <td> Emerging trends to reduce emissions from aero-engines: RQL, TAPS II, TALON X  </td>
+	<td> <!-- DBS $3, $4, $5, $6, $7 --> </td></tr>
+	<tr> <td> Afterburners: issue of stability </td>
+	<td> <!-- DBS $3, $4, $5, $6, $7 --> </td></tr>
+   <tr> <td> Basics of atomization and types of injectors</td>
+	<td> <!-- <a href="https://owncloud.iitm.ac.in/index.php/s/eK1OZZGF84JNuaU">Energy budget in atomization</a>, <br><a href="https://owncloud.iitm.ac.in/index.php/s/DGF0NrOM4Kbh2AG">Atomization processes (AW $3)</a> --> </td> </tr>
+	<tr> <td> Droplet vaporization, combustion  </td>
+	<td> <!-- DBS $3, $4, $5, $6, $7 --> </td></tr>
+
+	<!--<tr><td> Effect of swirl on flames</td><td> </td></tr>
+	
+	<tr> <td> Spray combustion: (i) Application in gas turbines and LP rockets  </td>
+	<td> </td></tr>
+
+	<tr> <td> Spray combustion: (ii) Application in furnaces and boilers </td>
+	<td> </td></tr>
+	<tr> <td> Aircraft engine concepts: TAPS combustors, Staged combustors </td>
+	<td> </td></tr>	
+	-->
+		
+</table><br>
+
+<h3> Module 5: Solid fuel combustion</h3>
+	<table border="1" cellspacing="2" cellpadding="2" width="100%">
+	<col width = "55%">
+	<col width = "45%">	
+   <tr> 
+	<td> Single particle combustion theory for coal and biomass</td>
+	<td> </td> </tr>
+	
+	<tr> <td> Biomass packed bed reactor </td>
+		<td> <!-- HSM2 $1, $4 --> </td></tr>
+	
+	<tr> <td> Burners for powdered coal </td>
+		<td>  </td></tr>
+	
+<!--	<tr> <td> Basic principles </td>
+	<td> HSM2 $1, $4 </td></tr>
+	
+	<tr> <td> Combustion and gasification of biomass </td>
+	<td>  HSM2 $6 </td></tr>
+
+	<tr> <td> Gasifier stoves </td>
+	<td> HSM2 $8 </td></tr> -->
+	
+</table><br>
+	
+</td>
+</tr>
+</table>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body></html>
